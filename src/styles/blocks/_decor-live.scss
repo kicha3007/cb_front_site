@@ -1,0 +1,43 @@
+.decor-live {
+  background: linear-gradient(103.48deg, #FE06AA -8.26%, #2906FE 113.51%);
+  border-radius: 50px;
+  padding: 6px 9px ;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 125px;
+  width: 100%;
+  @include phones {
+      max-width: 81px;
+    padding: 3px 9px;
+
+  }
+
+
+  &__title {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 28px;
+    color: #FFFFFF;
+    @include phones {
+      font-size: 20px;
+    }
+  }
+  &__img-box {
+    margin-right: 11px;
+    display: flex;
+    align-items: center;
+    max-width: 27px;
+
+    @include phones {
+        max-width: 23px;
+      margin-right: 7px;
+    }
+  }
+  &__img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+}

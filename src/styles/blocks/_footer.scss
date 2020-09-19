@@ -1,0 +1,147 @@
+.footer {
+  background: #292929;
+  &__wrap {
+    display: flex;
+    align-items: center;
+    padding: 35px 0;
+    justify-content: space-between;
+
+    @include tablets {
+      flex-wrap: wrap;
+      padding-top: 40px;
+      padding-bottom: 30px;
+    }
+
+  }
+  &__column {
+    @include tablets {
+        width: 100%;
+    }
+    &_pos_1 {
+      display: flex;
+      align-items: center;
+      @include tablets {
+          justify-content: center;
+        align-items: flex-start;
+        margin-bottom: 30px;
+      }
+
+
+
+    }
+    &_pos_2 {
+      position: relative;
+      @include tablets {
+        justify-content: center;
+        display: flex;
+        align-items: flex-start;
+      }
+
+    }
+
+  }
+  &__logo {
+    @include phones {
+        max-width: 132px;
+    }
+    &_pos_1 {
+      margin-right: 50px;
+      @include phones {
+        margin-right: 35px;
+      }
+
+    }
+    &_pos_2 {
+
+    }
+
+  }
+  &__logo-img {
+
+  }
+  &__soc-wrap {
+    display: flex;
+    align-items: center;
+    margin: 0 -8px;
+    @include tablets {
+      margin: 0 -15px;
+    }
+
+  }
+  &__soc-item {
+    margin: 0 8px;
+    position: relative;
+    @include tablets {
+      margin: 0 15px;
+    }
+
+  }
+  &__soc-img {
+
+  }
+  &__soc-img-box {
+    background: #8C25EE;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 46px;
+    height: 46px;
+  
+    &_show-phones {
+      display: none;
+      @include tablets {
+          display: flex;
+      }
+    }
+    
+
+  }
+  &__soc-img {
+
+  }
+  &__soc-text {
+    font-weight: normal;
+    font-size: 14px;
+    text-align: right;
+
+
+    color: #FFFFFF;
+    @include tablets {
+        display: none;
+    }
+
+  }
+  &__bottom {
+    display: none;
+    @include tablets {
+        display: block;
+
+
+      /* or 17px */
+
+     text-align: center;
+      padding-bottom: 30px;
+
+    }
+
+  }
+  &__bottom-text {
+    color: #FFFFFF;
+    font-size: 14px;
+  }
+  &__note-box {
+    position: absolute;
+    top: -96px;
+    right: 99px;
+    @include phones {
+
+      top: -37px;
+
+      right: auto;
+      left: 78px;
+    }
+
+  }
+
+}

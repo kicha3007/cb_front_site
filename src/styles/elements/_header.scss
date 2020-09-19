@@ -1,0 +1,110 @@
+.header {
+  position: relative;
+  background: #292929;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
+
+  &__top {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    @include tablets {
+      padding: 19px 0;
+    }
+  }
+
+  &__bottom {
+    display: none;
+    @include tablets {
+      display: block;
+    }
+  }
+
+  &__wrap {
+    display: flex;
+    align-items: center;
+  }
+
+  &__note-box {
+    position: absolute;
+    bottom: -55px;
+    left: 31%;
+    @include tablets {
+        display: none;
+    }
+  }
+  &__note-box-burger {
+    display: none;
+    position: absolute;
+    bottom: -69px;
+    right: 19%;
+    @include tablets {
+        display: block;
+    }
+  }
+  &__main-menu {
+    @include tablets {
+      display: none;
+    }
+  }
+  &__column {
+    &_pos_1 {
+      max-width: 153px;
+      @include tablets {
+        flex-grow: 1;
+      }
+    }
+
+    &_pos_2 {
+      flex-grow: 1;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      position: relative;
+
+
+    }
+
+
+
+    &_pos_3 {
+      display: none;
+      @include tablets {
+        display: flex;
+        flex-grow: 1;
+        justify-content: flex-end;
+      }
+    }
+  }
+
+  &__burger {
+    min-width: 30px;
+    min-height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 105;
+
+    &.active {
+      .header__burger-img_is_open {
+        display: none;
+      }
+
+      .header__burger-img_is_close {
+        display: block;
+      }
+    }
+  }
+
+  &__burger-img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+
+    &_is_open {
+    }
+
+    &_is_close {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,25 @@
+extend include/template_base
+
+
+include include/blocks/top-screen
+include include/blocks/main-form
+include include/blocks/welcome-box
+include include/footer
+include include/blocks/modal
+
+
+
+block variables
+	-
+		var title = 'Детальная страница заказа';
+
+block content
+	+top-screen()
+	+welcome-box()
+	+main-form()
+	+footer()
+	+modal()(id="modal-say")
+
+
+
+

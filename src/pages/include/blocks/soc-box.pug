@@ -1,0 +1,14 @@
+mixin soc-box(data)
+	.soc-box&attributes(attributes)
+		.soc-box__wrap
+			a(href="#").soc-box__item
+				.soc-box__img-box
+					img.soc-box__img(src="assets/img/footer_vk.png", alt='')
+			a(href="#").soc-box__item
+				.soc-box__img-box
+					img.soc-box__img(src="assets/img/footer_fb.png", alt='')
+			a(href="#").soc-box__item
+				.soc-box__text Обратная связь
+				.soc-box__img-box.soc-box__img-box_show-phones
+					img.soc-box__img(src="assets/img/footer_email.png", alt='')
+		

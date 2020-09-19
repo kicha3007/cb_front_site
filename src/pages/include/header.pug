@@ -1,0 +1,28 @@
+include blocks/logo
+include blocks/main-menu
+include blocks/mobile-menu
+include blocks/note-box
+
+mixin header(data)
+	header.header
+		.header__container.main-container
+			.header__top
+				.header__wrap
+					.header__column.header__column_pos_1
+						+logo()
+					.header__column.header__column_pos_2
+						.header__main-menu
+							+main-menu()
+					.header__column.header__column_pos_3
+						.header__note-box-burger
+							+note-box({"title": "Нажмите сюда, чтобы перейти <br> в меню.", "img": "arrow_yellow.svg", "arrow_pos": "", "top": "top"})
+						.header__burger(data-header-burger)
+							img(src="assets/img/gamburger.svg", alt='').header__burger-img.header__burger-img_is_open
+							img(src="assets/img/gamburger-close.svg", alt='').header__burger-img.header__burger-img_is_close
+				.header__note-box
+					+note-box({"title": "Нажимайте на пункты меню,<br> чтобы прейти в новый раздел.", "img": "arrow_yellow.svg","arrow_pos": "", "top": "top"})
+
+			.header__bottom
+				+mobile-menu()
+
+

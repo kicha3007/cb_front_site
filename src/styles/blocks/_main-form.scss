@@ -1,0 +1,170 @@
+.main-form {
+  background: linear-gradient(275.54deg, #feba36 1.84%, #fedc32 98.73%), #fedd30;
+  position: relative;
+  &__wrap {
+    display: flex;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    @include phones {
+      padding-top: 80px;
+      padding-bottom: 45px;
+    }
+
+  }
+
+  &__column {
+
+    &_pos_1 {
+      width: 45%;
+      @include laptop {
+        padding-right: 40px;
+        width: 30%;
+      }
+      @include phones {
+          display: none;
+      }
+
+
+
+    }
+
+
+
+    &_pos_2 {
+      width: 55%;
+      @include laptop {
+          width: 70%
+      }
+      @include phones {
+          width: 100%;
+      }
+      &::before {
+        @include phones {
+          content: '';
+          display: block;
+          position: absolute;
+          top: -180px;
+          right: 0;
+          width: 253px;
+          height: 469px;
+          background: url("../img/main-form_bg_mobile.png") no-repeat center;
+        }
+
+      }
+      
+    }
+  }
+  &__bg {
+    display: block;
+    //position: absolute;
+    top: -304px;
+
+    left:0;
+    //width: 880px;
+    //height: 900px;
+    pointer-events: none;
+
+
+  }
+  &__bg-img {
+    display: block;
+
+    height: auto;
+
+    max-width: 162%;
+
+
+    margin-top: -147px;
+    margin-left: -198px;
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 58px;
+    /* or 121% */
+    /* white */
+    color: #ffffff;
+    margin-bottom: 25px;
+    @include phones {
+      font-size: 30px;
+      line-height: 40px;
+    }
+  }
+
+  &__content {
+    max-width: 670px;
+  }
+
+  &__subtitle {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    color: #ffffff;
+    margin-bottom: 45px;
+    max-width: 580px;
+    @include phones {
+      font-size: 16px;
+      margin-bottom: 65px;
+      line-height: 26px;
+    }
+  }
+
+  &__form {
+  }
+
+  &__input-wrap {
+    margin-bottom: 14px;
+    max-width: 406px;
+    border: 1px solid transparent;
+    &.error {
+      border-color:  red;
+    }
+  }
+  &__input-wrap + .main-form__input-wrap {
+    margin-bottom: 28px;
+    @include phones {
+      margin-bottom: 40px;
+    }
+  }
+  //&__checkbox {
+  //  border: 1px solid transparent;
+  //  &.error {
+  //    border-color:  red;
+  //  }
+  //}
+
+  &__input {;
+    outline: none;
+    width: 100%;
+    padding: 13px 20px;
+    height: 50px;
+    border: none;
+    font-weight: normal;
+    background: #ffffff;
+    border-radius: 5px;
+    font-size: 16px;
+    line-height: 26px;
+    /* identical to box height, or 162% */
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.04em;
+    /* Gray 3 */
+    color: #828282;
+    @include phones {
+      font-size: 14px;
+    }
+  }
+
+  &__btn-wrap {
+    max-width: 258px;
+    margin-top: 28px;
+    @include phones {
+      margin-top: 45px;
+    }
+  }
+
+  &__btn.btn {
+    padding: 15px 15px 14px;
+  }
+}

@@ -1,0 +1,57 @@
+include decor-live
+
+mixin timetable(data)
+	.timetable&attributes(attributes)
+		.timetable__container.main-container
+			.timetable__main-title Расписание
+			.timetable__wrap
+				.timetable__list
+					.timetable__item
+						.timetable__column.timetable__column_pos_1
+							+decor-live({"title": "live"})
+						.timetable__column.timetable__column_pos_2
+							.timetable__content
+								.timetable__title
+									| Москва Банковская
+								.timetable__desc
+									| Прямой эфир с Александром Бугровым.
+					.timetable__item
+						.timetable__column.timetable__column_pos_1
+							.timetable__time
+								| 11:00
+						.timetable__column.timetable__column_pos_2
+							.timetable__content
+								.timetable__title
+									| 5 секретов финансово грамотных людей
+								.timetable__desc
+									| Спикер уточняется
+					.timetable__item
+						.timetable__column.timetable__column_pos_1
+							.timetable__time
+								| 11:00
+						.timetable__column.timetable__column_pos_2
+							.timetable__content
+								.timetable__title
+									| Как стать успешным инвестором
+								.timetable__desc
+									| Прямой эфир с Сергеем Швецовым.
+					.timetable__item
+						.timetable__column.timetable__column_pos_1
+							.timetable__time
+								| 11:00
+						.timetable__column.timetable__column_pos_2
+							.timetable__content
+								.timetable__title
+									| Мегарегулятор финансового рынка в 21 веке: вызовы, люди, технологии
+								.timetable__desc
+									| Прямой эфир с Русланом Вестеровским.
+					.timetable__item
+						.timetable__column.timetable__column_pos_1
+							.timetable__time
+								| 11:00
+						.timetable__column.timetable__column_pos_2
+							.timetable__content
+								.timetable__title
+									| Игра «Мозгобойня»
+								.timetable__desc
+									| Lorem ipsum dolor sit amet, consectetur adipiscing elit

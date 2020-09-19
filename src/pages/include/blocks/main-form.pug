@@ -1,0 +1,31 @@
+include main-checkbox
+
+mixin main-form(data)
+	.main-form&attributes(attributes)
+
+		.main-form__container.main-container
+			.main-form__wrap
+
+				.main-form__column.main-form__column_pos_1
+					.main-form__bg
+						img.main-form__bg-img(src="assets/img/main-form_bg.png", alt='')
+
+				.main-form__column.main-form__column_pos_2
+
+					form.main-form__content(data-main-form)
+						.main-form__tvitle
+							| Не пропустите &#32;
+							br
+							| День открытых дверей!
+						.main-form__subtitle
+							| Оставьте свои контактные данные — и мы напомним вам о нашем событии.
+						.main-form__form
+							.main-form__input-wrap(data-main-form-input-wrap)
+								input(placeholder="Имя и Фамилия" type="text" data-main-form-input="name").main-form__input
+							.main-form__input-wrap(data-main-form-input-wrap)
+								input(placeholder="E-mail" type="email" data-main-form-input="email").main-form__input
+							.main-form__checkbox(data-main-form-input-wrap)
+								+main-checkbox()(data-main-form-input="checkbox")
+
+							.main-form__btn-wrap
+								button.main-form__btn.btn(data-main-form-btn) Отправить

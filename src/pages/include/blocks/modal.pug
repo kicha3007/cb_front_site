@@ -1,0 +1,24 @@
+mixin modal(data)
+	.modal-say&attributes(attributes)
+		.modal-say__container
+			.modal-say__wrap
+				.modal-say__column.modal-say__column_pos_1
+					.modal-say__content
+						.modal-say__title
+							| Я иду на День
+							br
+							| открытых дверей
+						.modal-say__soc
+							.soc
+								.soc__wrap
+									a(href="#").soc__item
+										img(src="assets/img/modal_fb.png", alt='').soc__img
+									a(href="#").soc__item
+										img(src="assets/img/modal_vk.png", alt='').soc__img
+									a(href="#").soc__item
+										img(src="assets/img/modal_ok.png", alt='').soc__img
+									a(href="#").soc__item
+										img(src="assets/img/modal_tw.png", alt='').soc__img
+				.modal-say__column.modal-say__column_pos_2
+					img(src="assets/img/modal-icon.png", alt='').modal-say__img.modal-say__img_show_desc
+					img(src="assets/img/modal-icon_mobile.png", alt='').modal-say__img.modal-say__img_show_phones

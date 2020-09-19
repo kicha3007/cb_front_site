@@ -1,0 +1,8 @@
+mixin  note-box(data)
+	.note-box(data-note-box=data.top)&attributes(attributes  )
+		.note-box__wrap
+			.note-box__close(data-note-box-close)
+				img(src="assets/img/main/note-close.svg", alt='').note-box__close-img
+			.note-box__text !{data.title}
+			.note-box__arrow(class=data.arrow_pos)
+				img(src="assets/img/main/" + data.img, alt=''  ).note-box__arrow

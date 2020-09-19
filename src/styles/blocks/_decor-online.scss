@@ -1,0 +1,27 @@
+.decor-online {
+  background: linear-gradient(103.48deg, #FE06AA -8.26%, #2906FE 113.51%);
+  border-radius: 50px;
+  padding: 5px 5px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 254px;
+  width: 100%;
+  @include phones {
+      max-width: 120px;
+    padding: 3px 5px;
+  }
+
+
+  &__title {
+    font-weight: bold;
+    font-size: 40px;
+    display: flex;
+    align-items: flex-end;
+    text-align: center;
+    color: #FFFFFF;
+    @include phones {
+      font-size: 22px;
+    }
+  }
+}

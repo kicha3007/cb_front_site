@@ -1,0 +1,282 @@
+.main-box {
+  &__container {
+  }
+
+  &__top {
+    background: #4a2a59;
+  }
+
+  &__note-box {
+    position: absolute;
+    top: 31px;
+    right: -211px;
+    @include phones {
+
+      top: -37px;
+
+      right: auto;
+      left: 78px;
+    }
+
+  }
+  &__note-box-bottom {
+    position: absolute;
+    bottom: -96px;
+    right: 99px;
+    @include phones {
+
+      top: -37px;
+
+      right: auto;
+      left: 78px;
+    }
+  }
+
+  &__wrap {
+  }
+
+  &__row {
+    display: flex;
+
+    &_pos_1 {
+      @include phones {
+        flex-wrap: wrap;
+      }
+    }
+  }
+  &__shadow {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #000;
+    opacity: 0;
+    transition: .2s ease;
+    z-index: 2;
+    pointer-events: none;
+    @include phones {
+        display: none;
+    }
+    &_pos_left{
+      width: 2000px;
+      left: auto;
+    }
+    &_pos_right{
+      width: 2000px;
+      right: auto;
+    }
+  }
+
+  &__column {
+    position: relative;
+    display: block;
+    &:hover  {
+      .main-box__title {
+        text-decoration: underline;
+
+      }
+      .main-box__desc {
+        text-decoration: underline;
+
+      }
+      .main-box__shadow {  opacity: 0.2;}
+
+    }
+    &_pos_1 {
+      padding-top: 33px;
+      padding-right: 20px;
+      width: 53%;
+      @include phones {
+        width: 100%;
+        padding-top: 65px;
+        padding-right: 0;
+        padding-bottom: 30px;
+      }
+
+    }
+
+    &_pos_2 {
+      padding-left: 60px;
+      padding-bottom: 57px;
+      width: 47%;
+      display: flex;
+      align-items: flex-end;
+      position: relative;
+      @include phones {
+        width: 100%;
+        background: #ffe400;
+        min-height: 437px;
+        padding-left: 0;
+        padding-bottom: 25px;
+      }
+
+      &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 2000px;
+        height: 100%;
+        background: #ffe500 url("../img/main/home.svg") no-repeat left;
+        @include phones {
+          width: calc(100% + 40px);
+          left: -20px;
+          background: #ffe500 url("../img/main/home_mobile.svg") no-repeat center top;
+          z-index: 3;
+        }
+      }
+
+      &::after {
+        @include phones {
+          content: '';
+          display: block;
+          position: absolute;
+          left: -20px;
+          bottom: 0;
+          right: 0;
+          width: calc(100% + 40px);
+          height: 375px;
+
+          background: linear-gradient(0, #FFC700 35.25%, rgba(255, 199, 0, 0) 77.17%);
+          z-index: 3;
+        }
+      }
+    }
+  }
+
+  &__content {
+    position: relative;
+    z-index: 5;
+    max-width: 360px;
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: 40px;
+    color: #ffffff;
+    margin-bottom: 20px;
+    line-height: 1.2;
+    @include phones {
+      font-size: 25px;
+      margin-bottom: 18px;
+    }
+  }
+
+  &__desc {
+    font-weight: 500;
+    font-size: 17px;
+    color: #ffffff;
+    line-height: 1.6;
+    @include phones {
+      font-size: 16px;
+    }
+  }
+
+  &__img-box {
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+
+
+  &__bottom {
+    position: relative;
+    background: #2f0868;
+
+
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      width: 478px;
+      height: 504px;
+      pointer-events: none;
+
+      background: #2f0868 url("../img/main/main-decor_bottom.svg") no-repeat center top;
+
+      @include phones {
+          display: none;
+      }
+    }
+  }
+
+  &__bottom-container {
+    padding-right: 23%;
+    position: relative;
+    @include phones {
+      padding-right: 0;
+    }
+  }
+
+  &__bottom-wrap {
+    min-height: 504px;
+    padding-top: 70px;
+    position: relative;
+    display: block;
+
+    @include phones {
+        min-height: 460px;
+      padding-top: 310px;
+      padding-bottom: 20px;
+    
+    }
+    &:hover  {
+      .main-box__title {
+        text-decoration: underline;
+
+      }
+      .main-box__desc {
+        text-decoration: underline;
+
+      }
+      .main-box__shadow {  opacity: 0.2;}
+
+    }
+
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      width: 2000px;
+      height: 100%;
+      background: #f1a4a0 url("../img/main/fin-card.svg") no-repeat right;
+      @include phones {
+        width: calc(100% + 40px);
+        left: -20px;
+        background: #FCD5D0 url("../img/main/fin-card_mobile.svg") no-repeat right top;
+        z-index: 3;
+      }
+
+    }
+
+    &::after {
+      @include phones {
+        content: '';
+        display: block;
+        position: absolute;
+        left: -20px;
+        bottom: 0;
+        right: 0;
+        width: calc(100% + 40px);
+        height: 375px;
+        background: linear-gradient(0, #F1A4A0 28.05%, rgba(251, 193, 188, 0) 100%);
+        z-index: 3;
+      }
+    }
+
+  }
+}

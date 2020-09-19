@@ -1,0 +1,48 @@
+.note-box {
+  background: #FFFFFF;
+  position: relative;
+  /* shadow_frame */
+  //display: none;
+
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+  padding: 18px 25px  18px 18px;
+  z-index: 10;
+  &__text {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 18px;
+    white-space: nowrap;
+
+    /* or 129% */
+
+
+    /* black */
+
+    color: #000000;
+  }
+  &__close {
+    position: absolute;
+    top: 7px;
+    right: 7px;
+    cursor: pointer;
+
+
+
+  }
+  &__close-img {
+    display: block;
+  }
+  &__arrow {
+    position: absolute;
+    top: -8px;
+    right: -40px;
+    &_pos_left {
+      right: auto;
+      top: 26px;
+      left: -51px;
+    }
+    &_pos_right {
+      top: 18px;
+    }
+  }
+}

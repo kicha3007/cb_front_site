@@ -1,0 +1,19 @@
+include decor-online
+
+mixin main-screen(data)
+	.main-screen&attributes(attributes)
+		.main-screen__container.main-container
+			.main-screen__wrap
+				.main-screen__column.main-screen__column_pos_1
+					.main-screen__title
+						| День открытых
+						br
+						| дверей &#32;
+						+decor-online({"title": "online"})
+
+					.main-screen__desc
+						| Мы предлагаем вам побывать в Банке России не выходя из дома. Вы сможете познакомиться с историей и интерьерами банка, узнать больше о его работе и подтянуть свои знания о финансах в онлайн формате.
+				.main-screen__column.main-screen__column_pos_2
+					a(href="#").main-screen__img-box
+						img.main-screen__img.main-screen__img_show_desc(src="assets/img/main/main-screen-video.png", alt='')
+						img.main-screen__img.main-screen__img_show_phones(src="assets/img/main/main-screen-video_mobile.png", alt='')

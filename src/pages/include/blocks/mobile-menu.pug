@@ -1,0 +1,22 @@
+include logo
+include soc-box
+
+mixin mobile-menu()
+	.mobile-menu(data-mobile-menu)
+		.mobile-menu__wrap
+			.mobile-menu__top
+				a(href="#").mobile-menu__logo
+					img.mobile-menu__logo-img(src="assets/img/main/logo-mobile.svg", alt='')
+			.mobile-menu__center
+				ul.mobile-menu__list
+					li.mobile-menu__item.active(data-mobile-menu-item )
+						.mobile-menu__link Главная
+					li.mobile-menu__item(data-mobile-menu-item )
+						.mobile-menu__link Банк России — Мегарегулятор
+					li.mobile-menu__item(data-mobile-menu-item )
+						.mobile-menu__link Финансовая грамотность
+					li.mobile-menu__item(data-mobile-menu-item )
+						.mobile-menu__link История банка
+			.mobile-menu__bottom
+				+soc-box()
+

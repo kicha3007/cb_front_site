@@ -1,0 +1,56 @@
+.soc-box {
+
+  &__wrap {
+    display: flex;
+    align-items: center;
+    margin: 0 -8px;
+    @include tablets {
+      margin: 0 -15px;
+    }
+
+  }
+  &__item {
+    margin: 0 8px;
+    @include tablets {
+      margin: 0 15px;
+    }
+
+  }
+  &__img {
+
+  }
+  &__img-box {
+    background: #8C25EE;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+
+    &_show-phones {
+      display: none;
+      @include tablets {
+        display: flex;
+      }
+    }
+
+
+  }
+  &__img {
+
+  }
+  &__text {
+    font-weight: normal;
+    font-size: 14px;
+    text-align: right;
+
+
+    color: #FFFFFF;
+    @include tablets {
+      display: none;
+    }
+
+  }
+  
+}

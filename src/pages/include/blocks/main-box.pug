@@ -1,0 +1,43 @@
+
+
+mixin main-box(data)
+	.main-box&attributes(attributes)
+		.main-box__top
+			.main-box__container.main-container
+				.main-box__wrap
+					.main-box__row.main-box__row_pos_1
+						a(href="#").main-box__column.main-box__column_pos_1
+							.main-box__shadow.main-box__shadow_pos_left
+							.main-box__note-box
+								+note-box({"title": "Нажимайте на блок, чтобы <br>перейти на новую страницу.", "img": "arrow-pink-left.svg",  "arrow_pos": "note-box__arrow_pos_left", "top": "other"   })
+
+							.main-box__content
+								.main-box__title
+									| 160 лет истории
+								.main-box__desc
+									| Узнайте главные вехи в истории  главного банка страны
+							.main-box__img-box
+								img.main-box__img(src="assets/img/main/man.svg", alt='')
+						a(href="#").main-box__column.main-box__column_pos_2
+							.main-box__shadow.main-box__shadow_pos_right
+							.main-box__content
+								.main-box__title
+									| Банк России
+									br
+									| сегодня
+								.main-box__desc
+									| Как устроен Центральный Банк и в чем его основные функции?
+
+		.main-box__bottom
+			.main-box__bottom-container.main-container
+				a(href="#").main-box__bottom-wrap
+					.main-box__shadow.main-box__shadow_pos_left
+					.main-box__content
+						.main-box__title
+							| Финансовый
+							br
+							| практикум
+						.main-box__desc
+							| Проверьте свои знания в области финансов
+
+
