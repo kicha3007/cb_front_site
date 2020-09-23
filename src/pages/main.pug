@@ -1,0 +1,23 @@
+extend include/template_base
+
+
+include include/blocks/main-screen
+include include/blocks/timetable
+include include/blocks/main-box
+
+
+
+
+block variables
+	-
+		var title = 'Детальная страница заказа';
+
+block content
+	+main-screen()
+	+timetable()
+	+main-box()
+
+
+
+
+

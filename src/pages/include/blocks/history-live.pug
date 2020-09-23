@@ -1,0 +1,23 @@
+
+include decor-live
+
+mixin history-live(data)
+	.history-live&attributes(attributes)
+		.history-live__container
+			.history-live__wrap
+				.history-live__column.history-live__column_pos_1
+					.history-live__content
+						.history-live__icon
+							+decor-live({"title": "live"})
+						.history-live__title
+							| Прямой эфир
+						.history-live__subtitle «Москва Банковская»
+						.history-live__name Спикер: Александр Бугров
+
+
+				.history-live__column.history-live__column_pos_2
+					.history-live__img-box
+						img.history-live__img.history-live__img_show_desc(src="assets/img/main/microphone.png", alt='')
+
+
+

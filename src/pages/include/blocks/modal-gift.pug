@@ -1,0 +1,18 @@
+include soc
+
+mixin modal-gift(data)
+	#modal-gift.modal-gift&attributes(attributes)
+		.modal-gift__container
+			.modal-gift__wrap
+				.modal-gift__close(data-modal-gift-close)
+					img(src="assets/img/main/modal-close.png", alt='').modal-gift__close-img
+				.modal-gift__column.modal-gift__column_pos_1
+					.modal-gift__content
+						.modal-gift__title
+							| Участвуйте в активностях, играйте, примеряйте маски,  проходите тесты и выигрывайте призы!
+						.modal-gift__soc
+							+soc()
+
+				.modal-gift__column.modal-gift__column_pos_2
+					.modal-gift__img-box
+						img(src="assets/img/main/gift.png", alt='').modal-gift__img

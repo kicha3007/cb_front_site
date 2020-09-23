@@ -14,6 +14,7 @@ const babel = require('gulp-babel');
 const svgo = require('gulp-svgo');
 const svgSprite = require('gulp-svg-sprite');
 const pug = require('gulp-pug');
+const imagemin = require('gulp-imagemin');
 
 const {DIST_PATH, SRC_PATH, STYLES_LIBS, JS_LIBS} = require('./gulp.config');
 sass.compiler = require('node-sass');
@@ -116,6 +117,18 @@ task('icons', () => {
 
 task('copy:img', () => {
     return src(`${SRC_PATH}/assets/img/**/*`)
+        // .pipe(
+        //     imagemin([
+        //     imagemin.gifsicle({interlaced: true}),
+        //     imagemin.mozjpeg({quality: 75, progressive: true}),
+        //     imagemin.optipng({optimizationLevel: 5}),
+        //     imagemin.svgo({
+        //         plugins: [
+        //             {removeViewBox: true},
+        //             {cleanupIDs: false}
+        //         ]
+        //     })
+        // ]))
         .pipe(dest(`${DIST_PATH}/assets/img/`))
         .pipe(reload({stream: true}));
 });

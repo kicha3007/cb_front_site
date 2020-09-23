@@ -132,14 +132,11 @@
   }
   &__note-box {
     position: absolute;
-    top: -96px;
-    right: 99px;
-    @include phones {
+    top: -77px;
+    right: 117px;
+    @include tablets {
 
-      top: -37px;
-
-      right: auto;
-      left: 78px;
+      display: none;
     }
 
   }

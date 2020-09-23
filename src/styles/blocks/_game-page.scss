@@ -1,0 +1,247 @@
+.game-page {
+  padding: 125px 50px 150px;
+  background: #513b8f;
+  @include laptop {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  @include tablets {
+    padding: 75px 0 60px;
+    
+  }
+
+  &__container {
+  }
+  &__top {
+    text-align: center;
+  }
+  &__main-title {
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 1.4;
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 35px;
+    max-width: 885px;
+    display: inline-block;
+    @include tablets {
+      font-weight: bold;
+      font-size: 25px;
+      line-height: 35px;
+      /* identical to box height, or 140% */
+
+      text-align: center;
+      margin-bottom: 25px;
+    }
+    span {
+      font-weight: normal;
+
+    }
+  }
+
+  &__subtitle {
+    text-align: center;
+    font-weight: normal;
+    font-size: 20px;
+    color: #ffffff;
+    margin-bottom: 100px;
+    max-width: 885px;
+    display: inline-block;
+    line-height: 1.6;
+    @include tablets {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 24px;
+      /* or 171% */
+      margin-bottom: 50px;
+      text-align: center;
+    }
+
+  }
+
+  &__wrap {
+    background: #331B78;
+
+  }
+
+  &__game-content-mobile {
+
+
+  }
+  &__game-wrap  {
+
+
+
+
+
+  }
+
+
+  &__game-img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+
+  &__game-wrap-mobile {
+    display: none;
+
+    min-height: 483px;
+
+    align-items: center;
+    justify-content: center;
+
+  }
+  &__game-mobile-img-box {
+    margin: 0 auto;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+  }
+  &__game-mobile-img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+  &__game-mobile-title {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.6;
+    text-align: center;
+    color: #FFFFFF;
+    text-align: center;
+  }
+
+
+
+  &.mobile {
+    .game-page__game-wrap {
+      display: none;
+    }
+    .game-page__game-wrap-mobile  {
+      display: flex;
+    }
+  }
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+#gameContainer {
+  //position:absolute;
+  width:100%;
+  height:100%;
+
+
+
+
+}
+
+//
+//#gameBox {
+//  position: relative;
+//  padding-bottom: 56.25%; /* задаёт высоту контейнера для 16:9 (если 4:3 — поставьте 75%) */
+//  height: 0;
+//  overflow: hidden;
+//  display: block;
+//  width: 100%;
+//}
+//
+//#gameContainer
+//{
+//  position: absolute;
+//  top: 0;
+//  bottom: 0;
+//  left: 0;
+//  right: 0;
+//
+//
+//
+//
+//  //width  : 1300px !important;
+//  //height : 700px !important;
+//  //max-width  : 80% !important;
+//  //max-height : 80% !important;
+//  /*Change this to change player background color*/
+//  /*background: #2a2a2a;*/
+//
+//}
+
+.modal-game {
+  overflow: hidden;
+  display: none;
+}
+
+canvas
+{
+  display: block;
+  width: 100% !important;
+  height: 100% !important;
+  /*Change this to change player background color*/
+  /*background: #2a2a2a;*/
+
+}
+
+
+.pre-loader
+{
+  z-index: 9999999999999;
+  display: flex;
+  position: absolute;
+  top:0;left: 0;
+  width: 100vw;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  display: none;
+}
+
+.pre-loader .title
+{
+  color: #eee;
+  letter-spacing: 0.1em;
+}
+
+.progress-bar
+{
+  width: 40%;
+  padding: 5px;
+  background: #1a1a1a;
+  box-shadow: 0 1px 5px #000 inset, 0 1px 0 #444;
+  border-radius: 18px;
+}
+
+.progress-bar .fill
+{
+  background: #34c2e3;
+  height: 24px;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, .5) inset;
+  border-radius: 18px;
+  color: #fff;
+  text-align: center;
+  line-height: 24px;
+  overflow: hidden;
+}
+
+.fancybox-content{
+  background: transparent;
+  padding: 0;
+
+}
+
+
+

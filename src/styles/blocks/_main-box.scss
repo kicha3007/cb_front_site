@@ -120,11 +120,13 @@
         bottom: 0;
         width: 2000px;
         height: 100%;
-        background: #ffe500 url("../img/main/home.svg") no-repeat left;
+        background: #ffe500 url("../img/main/home.png") no-repeat left;
+        background-size: 47%;
         @include phones {
           width: calc(100% + 40px);
           left: -20px;
-          background: #ffe500 url("../img/main/home_mobile.svg") no-repeat center top;
+          background: #ffe500 url("../img/main/home_mobile.png") no-repeat center top;
+          background-size: 110%;
           z-index: 3;
         }
       }
@@ -179,6 +181,10 @@
     margin-top: 20px;
     display: flex;
     justify-content: flex-end;
+    max-width: 504px;
+    margin-left: auto;
+    align-items: flex-start;
+
   }
 
   &__img {
@@ -191,20 +197,23 @@
   &__bottom {
     position: relative;
     background: #2f0868;
+    overflow: hidden;
 
 
     &::before {
       content: '';
       display: block;
       position: absolute;
-      right: 0;
-      bottom: 0;
-      width: 478px;
+      right: -86px;
+      bottom: -143px;
+      width: 544px;
       height: 504px;
       pointer-events: none;
 
-      background: #2f0868 url("../img/main/main-decor_bottom.svg") no-repeat center top;
 
+      background: #2f0868 url("../img/main/decoration.png") no-repeat center top;
+      background-size: cover;
+      transform: rotate(220deg);
       @include phones {
           display: none;
       }
@@ -253,12 +262,14 @@
       bottom: 0;
       width: 2000px;
       height: 100%;
-      background: #f1a4a0 url("../img/main/fin-card.svg") no-repeat right;
+      background: #f1a4a0 url("../img/main/fin-card.png") no-repeat right;
+      background-size: 49%;
       @include phones {
         width: calc(100% + 40px);
         left: -20px;
-        background: #FCD5D0 url("../img/main/fin-card_mobile.svg") no-repeat right top;
+        background: #FCD5D0 url("../img/main/fin-card_mobile.png") no-repeat right top;
         z-index: 3;
+        background-size: 131%;
       }
 
     }

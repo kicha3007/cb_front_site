@@ -1,0 +1,223 @@
+.history-page {
+
+  &__row {
+    display: flex;
+    &_pos_1 {
+      @include phones {
+        flex-wrap: wrap;
+      }
+
+    }
+    &_pos_2 {
+      @include phones {
+        flex-wrap: wrap;
+      }
+
+    }
+    &_pos_3 {
+      background: #000;
+      @include phones {
+        flex-wrap: wrap;
+      }
+
+    }
+
+  }
+
+  &__column {
+    position: relative;
+    &_pos_1 {
+
+
+    }
+    &_pos_2 {
+
+
+    }
+    &_count_1 {
+      width: 60%;
+      @include laptop {
+          width: 50%;
+      }
+      @include phones {
+          width: 100%;
+        order: 2;
+      }
+      &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 100%;
+        width: 2000px;
+        height: 100%;
+        background: #8C25EE
+      }
+      &::after {
+        @include phones {
+
+
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 100%;
+        width: 2000px;
+        height: 100%;
+        background: #8C25EE
+        }
+      }
+
+
+
+
+    }
+    &_count_2 {
+      width: 40%;
+      @include laptop {
+        width: 50%;
+      }
+      @include phones {
+        width: 100%;
+        order: 1;
+      }
+      &::before {
+          content: '';
+          display: block;
+          position: absolute;
+          top: 0;
+        bottom: 0;
+          left: 100%;
+          width: 2000px;
+          height: 100%;
+        background: linear-gradient(0deg, #FFAA04 24.93%, #FEDC32 84.76%), #FEDD30;
+      }
+      &::after {
+        @include phones {
+
+
+          content: '';
+          display: block;
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          right: 100%;
+          width: 2000px;
+          height: 100%;
+          background: linear-gradient(0deg, #FFAA04 24.93%, #FEDC32 84.76%), #FEDD30;
+        }
+      }
+    }
+    &_count_3 {
+      width: 40%;
+      @include laptop {
+          width: 100%;
+      }
+      @include phones {
+        width: 100%;
+      }
+      &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 100%;
+        width: 2000px;
+        height: 100%;
+        background: #8C25EE
+      }
+      &::after {
+        @include phones {
+
+
+          content: '';
+          display: block;
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 100%;
+          width: 2000px;
+          height: 100%;
+          background: #8C25EE
+        }
+      }
+
+    }
+    &_count_4 {
+      width: 60%;
+      @include laptop {
+        width: 100%;
+      }
+      @include phones {
+        width: 100%;
+      }
+      &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 100%;
+        width: 2000px;
+        height: 100%;
+        background: url("../img/main/facts.png") no-repeat top left;
+        @include phones {
+          display: none;
+        }
+
+      }
+
+    }
+    &_count_5 {
+      width: 50%;
+      @include phones {
+        width: 100%;
+      }
+
+      &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 100%;
+        width: 2000px;
+        height: 100%;
+        background: #331B78;
+        @include phones {
+            left: -20px;
+        }
+
+      }
+    }
+    &_count_6 {
+      width: 50%;
+      @include phones {
+        width: 100%;
+      }
+      &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 100%;
+        width: 2000px;
+        height: 100%;
+        background: linear-gradient(0deg, #FEBA36 6.54%, #FEDC32 46.68%), #FEDD30;
+
+        @include phones {
+          left: -20px;
+        }
+
+      }
+
+    }
+
+  }
+
+
+}
