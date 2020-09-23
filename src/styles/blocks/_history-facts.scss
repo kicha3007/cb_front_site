@@ -17,6 +17,51 @@
     padding-left: 30px;
     padding-top: 50px;
   }
+
+  display: block;
+
+
+
+  &__shadow {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #000;
+    opacity: 0;
+    transition: .2s ease;
+    z-index: 2;
+    pointer-events: none;
+    @include phones {
+      display: none;
+    }
+    &_pos_left{
+      width: 2000px;
+      left: auto;
+    }
+    &_pos_right{
+      width: 2000px;
+      right: auto;
+    }
+  }
+
+
+
+  &:hover {
+    .history-facts__title {
+      text-decoration: underline;
+    }
+
+    .history-facts__desc {
+      text-decoration: underline;
+    }
+    .history-facts__shadow {  opacity: 0.2;}
+  }
+
+
+
+
   &::before {
     content: '';
     display: block;

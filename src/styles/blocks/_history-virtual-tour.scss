@@ -3,8 +3,43 @@
   height: 100%;
   padding: 30px 0 30px;
   position: relative;
+  display: block;
   @include phones {
     padding: 40px 0 20px;
+  }
+
+  &__shadow {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #000;
+    opacity: 0;
+    transition: .2s ease;
+    z-index: 2;
+    pointer-events: none;
+    @include phones {
+      display: none;
+    }
+    &_pos_left{
+      width: 2000px;
+      left: auto;
+    }
+    &_pos_right{
+      width: 2000px;
+      right: auto;
+    }
+  }
+  &:hover {
+    .history-virtual-tour__title {
+      text-decoration: underline;
+    }
+
+    .history-virtual-tour__desc {
+      text-decoration: underline;
+    }
+    .history-screen__shadow {  opacity: 0.2;}
   }
 
 
@@ -41,6 +76,8 @@
 
   &__content {
     max-width: 360px;
+    position: relative;
+    z-index: 5;
   }
 
   &__title {

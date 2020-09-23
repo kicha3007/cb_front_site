@@ -2,7 +2,8 @@
 include decor-live
 
 mixin history-live(data)
-	.history-live&attributes(attributes)
+	a(href="#").history-live&attributes(attributes)
+		.history-live__shadow.history-live__shadow_pos_right
 		.history-live__container
 			.history-live__wrap
 				.history-live__column.history-live__column_pos_1
