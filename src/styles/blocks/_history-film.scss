@@ -1,8 +1,13 @@
 .history-film {
   height: 100%;
-  padding: 340px 0 30px 60px;
+  padding: 40px 0 0 50px;
+
   position: relative;
   background: linear-gradient(0deg, #FEBA36 6.54%, #FEDC32 46.68%), #FEDD30;
+  @include phones {
+    padding-bottom: 30px;
+    padding-top: 0;
+  }
 
 
   @include laptop {
@@ -58,6 +63,8 @@
   }
 
   &__wrap {
+
+
     @include phones {
       display: flex;
       flex-direction: column;
@@ -66,16 +73,34 @@
 
   &__column {
     &_pos_1 {
-      display: none;
+      @include phones {
+          order: 2;
+      }
+
 
     }
 
     &_pos_2 {
+      position: absolute;
+      bottom: -27px;
+      right: -52px;
+      width: 300px;
+      @include laptop {
+        width: 242px;
+      }
+      @include phones {
+          position: static;
+        width: 280px;
+        order: 1;
+        margin: 0 auto;
+      }
 
     }
   }
 
   &__content {
+    position: relative;
+    z-index: 5;
 
   }
 
@@ -96,6 +121,7 @@
     font-size: 17px;
     color: #ffffff;
     line-height: 1.5;
+    max-width: 380px;
     @include tablets {
       font-size: 14px;
     }

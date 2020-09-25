@@ -1,14 +1,15 @@
 extend include/template_base
 
 
-include include/blocks/history-screen
-include include/blocks/history-virtual-tour
-include include/blocks/history-facts
-include include/blocks/history-finance
-include include/blocks/history-live
-include include/blocks/history-video-tour
-include include/blocks/history-film
-include include/blocks/modal-gift
+include include/blocks/today-screen
+include include/blocks/today-live
+include include/blocks/today-finance-market
+include include/blocks/today-our-work
+include include/blocks/today-say
+include include/blocks/today-tetris
+include include/blocks/today-way
+include include/blocks/today-constructor
+include include/blocks/today-mobile-app
 
 
 block variables
@@ -16,29 +17,31 @@ block variables
 		var title = 'Банк России';
 
 block content
-	.history-page
-		.history-page__wrap
-			+history-screen()
-			.history-page__container.main-container
-				.history-page__row.history-page__row_pos_1
-					.history-page__column.history-page__column_pos_1.history-page__column_count_1
-						+history-virtual-tour()
-					.history-page__column.history-page__column_pos_2.history-page__column_count_2
-						+history-live()
-
-			.history-page__container.main-container
-				.history-page__row.history-page__row_pos_2
-					.history-page__column.history-page__column_pos_1.history-page__column_count_3
-						+history-finance()
-					.history-page__column.history-page__column_pos_2.history-page__column_count_4
-						+history-facts()
-			.history-page__container.main-container
-				.history-page__row.history-page__row_pos_3
-					.history-page__column.history-page__column_pos_1.history-page__column_count_5
-						+history-video-tour()
-					.history-page__column.history-page__column_pos_2.history-page__column_count_6
-						+history-film()
-		+modal-gift()
+	.today-page
+		.today-page__wrap
+			.today-page__top
+				+today-screen()
+			.today-page__container.main-container
+				.today-page__row.today-page__row_pos_1
+					.today-page__column.today-page__column_pos_1.today-page__column_count_1
+						+today-finance-market()
+					.today-page__column.today-page__column_pos_2.today-page__column_count_2
+						+today-our-work()
+				.today-page__row.today-page__row_pos_2
+					.today-page__column.today-page__column_pos_1.today-page__column_count_3
+						.today-page__item.today-page__item_pos_1
+							+today-live()
+						.today-page__item.today-page__item_pos_2
+							+today-say()
+					.today-page__column.today-page__column_pos_2.today-page__column_count_4
+						.today-page__item.today-page__item_pos_3
+							+today-tetris()
+						.today-page__item.today-page__item_pos_4
+							+today-constructor()
 
 
-
+				.today-page__row.today-page__row_pos_3
+					.today-page__column.today-page__column_pos_1.today-page__column_count_5
+						+today-mobile-app()
+					.today-page__column.today-page__column_pos_2.today-page__column_count_6
+						+today-way()

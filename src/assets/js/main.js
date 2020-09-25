@@ -78,9 +78,9 @@ function DOMready() {
     let modalGift = $("#modal-gift");
     let overlayAllTransparent = $("[data-overlay-all-transparent]");
 
-    setTimeout(function () {
-        activetedGiftModal();
-    }, 5000)
+    // setTimeout(function () {
+    //     activetedGiftModal();
+    // }, 10)
 
     $("[data-modal-gift-close], [data-overlay-all-transparent]").on("click", function () {
         deactivatedGiftModal();

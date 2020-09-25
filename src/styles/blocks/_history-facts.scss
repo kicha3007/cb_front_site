@@ -1,12 +1,13 @@
 .history-facts {
   position: relative;
-  padding: 240px 0 40px  60px;
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 40px;
+  padding-right: 10px;
+
   height: 100%;
-  @include desktop {
-    padding-left: 50px;
-  }
   @include phones {
-    padding: 30px 0 240px;
+    padding: 0 0 35px;
   }
 
   @include laptop {
@@ -14,11 +15,11 @@
     padding-top: 150px;
   }
   @include tablets {
-    padding-left: 30px;
+    padding-left: 0;
     padding-top: 50px;
   }
 
-  display: block;
+
 
 
 
@@ -68,15 +69,22 @@
     position: absolute;
     top: 0;
     bottom: 0;
-    left: 0;
-    width: 814px;
+    right: 0;
+    width: 1026px;
     height: 100%;
-    background: url("../img/main/facts.png") no-repeat top left;
-    background-size: cover;
+    background: url("../img/main/facts.png") no-repeat top right;
+
+    background-size: 81%;
+    @include laptop {
+      background-size: 88%;
+    }
     @include phones {
         left: -20px;
-      background-size: 148%;
-      background-position: -507px -2px;
+
+
+      width: calc(100% + 40px);
+      background-size: 326%;
+      background-position: -695px 0px;
     }
   }
   &__content {

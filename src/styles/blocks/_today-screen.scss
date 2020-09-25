@@ -1,0 +1,196 @@
+.today-screen {
+
+  background: #ffe500;
+  display: block;
+  position: relative;
+  overflow: hidden;
+
+
+  &__content {
+    position: relative;
+    z-index: 5;
+  }
+
+  &__container {
+    position: relative;
+
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      bottom: -120;
+      right: 94%;
+      width: 2053px;
+      height: 100%;
+      background:  #FFC700;
+      background-size: 100%;
+      @include phones {
+          display: none;
+      }
+
+    }
+
+
+
+
+  }
+
+  &__shadow {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #000;
+    opacity: 0;
+    transition: .2s ease;
+    z-index: 2;
+    pointer-events: none;
+    width: 100%;
+    @include phones {
+      display: none;
+    }
+    &_pos_left{
+      width: 2000px;
+      left: auto;
+    }
+    &_pos_right{
+      width: 2000px;
+      right: auto;
+    }
+  }
+
+  &:hover {
+    .today-screen__title {
+      text-decoration: underline;
+    }
+
+    .today-screen__desc {
+      text-decoration: underline;
+    }
+    .today-screen__shadow {  opacity: 0.2;}
+  }
+
+
+
+
+
+
+
+
+
+
+  &:hover {
+    .history-screen__title {
+      text-decoration: underline;
+    }
+
+    .history-screen__desc {
+      text-decoration: underline;
+    }
+    .history-screen__shadow {  opacity: 0.2;}
+  }
+
+
+
+  &__container {
+  }
+
+  &__wrap {
+    display: flex;
+    align-items: center;
+
+    position: relative;
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      bottom: -120;
+      right: -130px;
+      width: 1053px;
+      height: calc(100% + 70px);
+      background: url("../img/main/today-home.png") no-repeat top right;
+      background-size: 100%;
+      @include laptop {
+          width: 700px;
+      }
+      @include tablets {
+        width: 500px;
+      }
+      @include phones {
+        background-size: 110%;
+      }
+    }
+
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      width: 1158px;
+      height: calc(100% + 70px);
+      background: linear-gradient(90.09deg, #FFC700 35.25%, rgba(255, 199, 0, 0) 77.17%);      background-size: 100%;
+      @include laptop {
+        width: 700px;
+      }
+      @include tablets {
+          width: 500px;
+      }
+      @include phones {
+        background: linear-gradient(0deg, #FFC700 35.25%, rgba(255, 199, 0, 0) 77.17%);
+      top:auto;
+        height: 375px;
+        width: calc(100% + 40px);;
+        left: -20px;
+
+      }
+    }
+
+  }
+
+
+
+  &__title {
+    padding-top: 170px;
+    font-weight: 800;
+    font-size: 50px;
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 40px;
+    color: #ffffff;
+    line-height: 1.1;
+    @include laptop {
+      padding-top: 150px;
+    }
+    @include tablets {
+      font-size: 25px;
+      margin-bottom: 20px;
+
+    }
+    @include phones {
+      padding-top: 357px;
+    }
+  }
+
+  &__desc {
+    max-width: 500px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #ffffff;
+    padding-bottom: 180px;
+    @include laptop {
+      padding-bottom: 100px;
+    }
+    @include tablets {
+      font-size: 16px;
+      padding-bottom: 45px;
+      max-width: 280px;
+    }
+  }
+
+
+}

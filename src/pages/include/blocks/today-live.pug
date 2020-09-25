@@ -1,0 +1,24 @@
+include decor-live
+
+mixin today-live(data)
+	a(href="#").today-live&attributes(attributes)
+		.today-live__shadow.today-live__shadow_pos_left
+		.today-live__container
+			.today-live__wrap
+				.today-live__column.today-live__column_pos_1
+					.today-live__content
+						//.today-live__icon
+							+decor-live({"title": "live"})
+						.today-live__title
+							| Прямой эфир
+						.today-live__subtitle
+							| «Мегарегулятор финансового рынка в 21 веке: вызовы, люди, технологии»
+						.today-live__name Спикер: Руслан Вестеровский
+
+
+				.today-live__column.today-live__column_pos_2
+					.today-live__img-box
+						img.today-live__img.today-live__img_show_desc(src="assets/img/main/microphone.png", alt='')
+
+
+

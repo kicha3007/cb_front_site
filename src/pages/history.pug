@@ -1,0 +1,46 @@
+extend include/template_base
+
+
+include include/blocks/history-screen
+include include/blocks/history-virtual-tour
+include include/blocks/history-facts
+include include/blocks/history-finance
+include include/blocks/history-live
+include include/blocks/history-video-tour
+include include/blocks/history-film
+include include/blocks/modal-gift
+
+
+block variables
+	-
+		var title = 'Банк России';
+
+block content
+	.history-page
+		.history-page__wrap
+			+history-screen()
+			.history-page__container.main-container
+				.history-page__row.history-page__row_pos_1
+					.history-page__column.history-page__column_pos_1.history-page__column_count_1
+						+history-live()
+					.history-page__column.history-page__column_pos_2.history-page__column_count_2
+						+history-virtual-tour()
+			.history-page__container.main-container
+				.history-page__row.history-page__row_pos_2
+					.history-page__column.history-page__column_pos_1.history-page__column_count_3
+						+history-facts()
+
+					.history-page__column.history-page__column_pos_2.history-page__column_count_4
+						+history-film()
+
+			.history-page__container.main-container
+				.history-page__row.history-page__row_pos_3
+					.history-page__column.history-page__column_pos_1.history-page__column_count_5
+						+history-video-tour()
+					.history-page__column.history-page__column_pos_2.history-page__column_count_6
+						+history-finance()
+
+		+modal-gift()
+
+
+

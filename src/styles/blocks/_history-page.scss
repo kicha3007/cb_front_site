@@ -35,14 +35,23 @@
 
     }
     &_count_1 {
-      width: 60%;
+      width: 45%;
+      min-height: 453px;
       @include laptop {
           width: 50%;
+        min-height: 400px;
+      }
+      @include tablets {
+        min-height: 350px;
       }
       @include phones {
           width: 100%;
-        order: 2;
+
+        min-height: auto;
+
       }
+   
+
       &::before {
         content: '';
         display: block;
@@ -52,46 +61,6 @@
         right: 100%;
         width: 2000px;
         height: 100%;
-        background: #8C25EE
-      }
-      &::after {
-        @include phones {
-
-
-        content: '';
-        display: block;
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 100%;
-        width: 2000px;
-        height: 100%;
-        background: #8C25EE
-        }
-      }
-
-
-
-
-    }
-    &_count_2 {
-      width: 40%;
-      @include laptop {
-        width: 50%;
-      }
-      @include phones {
-        width: 100%;
-        order: 1;
-      }
-      &::before {
-          content: '';
-          display: block;
-          position: absolute;
-          top: 0;
-        bottom: 0;
-          left: 100%;
-          width: 2000px;
-          height: 100%;
         background: linear-gradient(0deg, #FFAA04 24.93%, #FEDC32 84.76%), #FEDD30;
       }
       &::after {
@@ -103,20 +72,76 @@
           position: absolute;
           top: 0;
           bottom: 0;
-          right: 100%;
+          left: 100%;
           width: 2000px;
           height: 100%;
           background: linear-gradient(0deg, #FFAA04 24.93%, #FEDC32 84.76%), #FEDD30;
         }
       }
+
+
+
+
+    }
+    &_count_2 {
+      width: 55%;
+      @include laptop {
+        width: 50%;
+      }
+      @include phones {
+          width: 100%;
+      }
+
+
+
+
+      &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 100%;
+        width: 2000px;
+        height: 100%;
+
+        background: #77BDFF url("../img/main/virtual-tour.png")  bottom left  repeat-x;
+        background-size: 34%;
+        @include desktop {
+          background-size: 29%;
+          
+        }
+        @include laptop {
+          background-size: 20%;
+        }
+        @include tablets {
+          background-size: 15%;
+        }
+        @include phones {
+
+          z-index: 5;
+          background-repeat: no-repeat;
+          background-size: 173%;
+          width: calc(100% + 40px);
+          left: -20px;
+          right: -20px;
+          background-position: center bottom;
+        }
+
+
+
+      }
+
     }
     &_count_3 {
-      width: 40%;
+      width: 55%;
+      min-height: 453px;
       @include laptop {
           width: 100%;
       }
       @include phones {
         width: 100%;
+        min-height: 396px;
       }
       &::before {
         content: '';
@@ -124,35 +149,26 @@
         position: absolute;
         top: 0;
         bottom: 0;
-        right: 100%;
+        right: 0;
         width: 2000px;
         height: 100%;
-        background: #8C25EE
-      }
-      &::after {
+        background: url("../img/main/facts.png") no-repeat top right;
+
         @include phones {
-
-
-          content: '';
-          display: block;
-          position: absolute;
-          top: 0;
-          bottom: 0;
-          left: 100%;
-          width: 2000px;
-          height: 100%;
-          background: #8C25EE
+          display: none;
         }
+
       }
 
     }
     &_count_4 {
-      width: 60%;
+      width: 45%;
       @include laptop {
         width: 100%;
       }
       @include phones {
         width: 100%;
+
       }
       &::before {
         content: '';
@@ -163,18 +179,24 @@
         left: 100%;
         width: 2000px;
         height: 100%;
-        background: url("../img/main/facts.png") no-repeat top left;
+        background: linear-gradient(0deg,#feba36 6.54%,#fedc32 46.68%),#fedd30;
         @include phones {
-          display: none;
+          left: -20px;
         }
-
       }
+
+
 
     }
     &_count_5 {
       width: 50%;
+      min-height: 629px;
+      @include laptop {
+        min-height: 453px;
+      }
       @include phones {
         width: 100%;
+        min-height: 569px;
       }
 
       &::before {
@@ -186,7 +208,7 @@
         right: 100%;
         width: 2000px;
         height: 100%;
-        background: #331B78;
+        background: #9DD7FF;
         @include phones {
             left: -20px;
         }
@@ -195,6 +217,7 @@
     }
     &_count_6 {
       width: 50%;
+
       @include phones {
         width: 100%;
       }
@@ -207,13 +230,13 @@
         left: 100%;
         width: 2000px;
         height: 100%;
-        background: linear-gradient(0deg, #FEBA36 6.54%, #FEDC32 46.68%), #FEDD30;
-
+        background: #6C01D1;
         @include phones {
           left: -20px;
         }
 
       }
+
 
     }
 
