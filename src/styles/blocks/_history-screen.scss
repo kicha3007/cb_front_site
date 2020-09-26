@@ -3,51 +3,6 @@
   background: linear-gradient(93.5deg, #6e1e93 10.5%, #4a2a59 89.14%), #4a2a59;
   display: block;
   position: relative;
-
-  &__shadow {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: #000;
-    opacity: 0;
-    transition: .2s ease;
-    z-index: 2;
-    pointer-events: none;
-    @include phones {
-      display: none;
-    }
-    &_pos_left{
-      width: 2000px;
-      left: auto;
-    }
-    &_pos_right{
-      width: 2000px;
-      right: auto;
-    }
-  }
-
-
-
-
-
-
-
-
-
-
-  &:hover {
-    .history-screen__title {
-      text-decoration: underline;
-    }
-
-    .history-screen__desc {
-      text-decoration: underline;
-    }
-    .history-screen__shadow {  opacity: 0.2;}
-  }
-
   @include phones {
     padding: 65px 0 30px;
   }
@@ -116,8 +71,12 @@
     font-weight: 600;
     font-size: 20px;
     color: #ffffff;
+    line-height: 1.5;
     @include tablets {
       font-size: 16px;
+    }
+    @include phones {
+      font-weight: 500;
     }
   }
 

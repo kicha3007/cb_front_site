@@ -1,0 +1,168 @@
+.seminar-screen {
+  background: #f8aca8;
+  display: block;
+  position: relative;
+  overflow: hidden;
+  @include phones {
+      min-height: 522px;
+    display: flex;
+    align-items: flex-end;
+  }
+
+
+  &__content {
+    position: relative;
+    z-index: 5;
+  }
+
+  &__container {
+    position: relative;
+    @include phones {
+      position: static;
+    }
+
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      bottom: -120;
+      right: 94%;
+      width: 2053px;
+      height: 100%;
+      background:   #F8ACA8;
+      background-size: 100%;
+      @include phones {
+          display: none;
+      }
+
+    }
+
+
+
+
+  }
+
+
+
+
+
+
+  &__container {
+  }
+
+  &__wrap {
+    display: flex;
+    align-items: center;
+
+    position: relative;
+    @include phones {
+        position: static;
+    }
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      bottom: -120;
+      right: -130px;
+      width: 1000px;
+
+      height: 100%;
+      background: url("../img/main/card-screen.png") no-repeat top right;
+      background-size: cover;
+      @include laptop {
+          width: 800px;
+      }
+      @include tablets {
+        width: 600px;
+      }
+
+
+      @include phones {
+       width: calc(100% + 40px);
+        left: -20px;
+
+        bottom: auto;
+        top: 0;
+        background: url("../img/main/fin-card_mobile.png") no-repeat top right;
+        background-size: 158%;
+      }
+    }
+
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      width: 1158px;
+      height: calc(100% + 70px);
+      background: linear-gradient(90deg, #F8ACA8 46.41%, rgba(251, 193, 188, 0) 100%);
+      @include laptop {
+        width: 700px;
+      }
+      @include tablets {
+          width: 500px;
+      }
+      @include phones {
+        background: linear-gradient(0, #F1A4A0 28.05%, rgba(251, 193, 188, 0) 100%);
+        top:auto;
+        bottom: 0;
+        height: 375px;
+        width: calc(100% + 40px);;
+        left: -20px;
+
+      }
+    }
+
+  }
+
+
+
+  &__title {
+    padding-top: 170px;
+    font-weight: 800;
+    font-size: 50px;
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 40px;
+    color: #ffffff;
+    line-height: 1.1;
+    @include laptop {
+      padding-top: 150px;
+    }
+    @include tablets {
+      font-size: 25px;
+      margin-bottom: 20px;
+      padding-top: 80px;
+
+    }
+    @include phones {
+      padding-top: 57px;
+  
+    }
+  }
+
+  &__desc {
+    max-width: 500px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #ffffff;
+    padding-bottom: 160px;
+    @include laptop {
+      padding-bottom: 100px;
+    }
+    @include tablets {
+      font-size: 16px;
+      padding-bottom: 45px;
+      max-width: 280px;
+    }
+    @include phones {
+      font-weight: 500;
+    }
+  }
+
+
+}

@@ -104,28 +104,16 @@
         left: 100%;
         width: 2000px;
         height: 100%;
+        background: #77BDFF;
 
-        background: #77BDFF url("../img/main/virtual-tour.png")  bottom left  repeat-x;
-        background-size: 34%;
-        @include desktop {
-          background-size: 29%;
-          
-        }
-        @include laptop {
-          background-size: 20%;
-        }
-        @include tablets {
-          background-size: 15%;
-        }
         @include phones {
+          background: #77BDFF url("../img/main/virtual-tour.png")  center bottom  no-repeat;
 
           z-index: 5;
-          background-repeat: no-repeat;
           background-size: 173%;
           width: calc(100% + 40px);
           left: -20px;
           right: -20px;
-          background-position: center bottom;
         }
 
 

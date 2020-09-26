@@ -43,7 +43,7 @@
     @include phones {
       left: -20px;
       width: calc(100% + 40px);
-      background-repeat: repeat-x;
+      background-position: 0 top;
     }
   }
 

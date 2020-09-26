@@ -36,41 +36,6 @@
 
   }
 
-  &__shadow {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: #000;
-    opacity: 0;
-    transition: .2s ease;
-    z-index: 2;
-    pointer-events: none;
-    width: 100%;
-    @include phones {
-      display: none;
-    }
-    &_pos_left{
-      width: 2000px;
-      left: auto;
-    }
-    &_pos_right{
-      width: 2000px;
-      right: auto;
-    }
-  }
-
-  &:hover {
-    .today-screen__title {
-      text-decoration: underline;
-    }
-
-    .today-screen__desc {
-      text-decoration: underline;
-    }
-    .today-screen__shadow {  opacity: 0.2;}
-  }
 
 
 
@@ -78,19 +43,6 @@
 
 
 
-
-
-
-  &:hover {
-    .history-screen__title {
-      text-decoration: underline;
-    }
-
-    .history-screen__desc {
-      text-decoration: underline;
-    }
-    .history-screen__shadow {  opacity: 0.2;}
-  }
 
 
 
@@ -156,7 +108,7 @@
 
   &__title {
     padding-top: 170px;
-    font-weight: 800;
+    font-weight: 900;
     font-size: 50px;
     display: flex;
     align-items: flex-end;
@@ -181,6 +133,7 @@
     font-weight: 600;
     font-size: 20px;
     color: #ffffff;
+    line-height: 1.5;
     padding-bottom: 180px;
     @include laptop {
       padding-bottom: 100px;
@@ -189,6 +142,9 @@
       font-size: 16px;
       padding-bottom: 45px;
       max-width: 280px;
+    }
+    @include phones {
+      font-weight: 500;
     }
   }
 

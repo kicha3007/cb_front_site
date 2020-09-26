@@ -1,0 +1,127 @@
+.seminar-fight {
+  height: 100%;
+  padding: 80px 30px 55px 0;
+  position: relative;
+  background: #5C7EFF;
+
+
+
+
+  display: block;
+  @include phones {
+    padding-top: 50px;
+  }
+
+
+  &__shadow {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #000;
+    opacity: 0;
+    transition: .2s ease;
+    z-index: 2;
+    pointer-events: none;
+    @include phones {
+      display: none;
+    }
+    &_pos_left{
+      width: 2000px;
+      left: auto;
+    }
+    &_pos_right{
+      width: 2000px;
+      right: auto;
+    }
+  }
+  &:hover {
+    .seminar-fight__title {
+      text-decoration: underline;
+    }
+
+    .seminar-fight__desc {
+      text-decoration: underline;
+    }
+
+    .seminar-fight__shadow {  opacity: 0.2;}
+  }
+
+
+  &__container {
+  }
+
+  &__wrap {
+    @include phones {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &__column {
+    &_pos_1 {
+
+
+    }
+
+    &_pos_2 {
+      position: absolute;
+      bottom: 0;
+      right: 10px;
+
+    }
+  }
+
+  &__content {
+    position: relative;
+    z-index: 5;
+
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 1.3;
+    color: #ffffff;
+    margin-bottom: 20px;
+
+    @include tablets {
+      font-size: 25px;
+    }
+  }
+
+  &__desc {
+    font-weight: 500;
+    font-size: 17px;
+    color: #ffffff;
+    line-height: 1.5;
+    margin-bottom: -30px;
+    @include laptop {
+      margin-bottom: 0;
+    }
+    @include tablets {
+      font-size: 14px;
+    }
+    @include phones {
+      margin-bottom: 30px;
+    }
+
+
+  }
+
+  &__img-box {
+    max-width: 411px;
+    @include phones {
+      max-width: 300px;
+    }
+
+
+  }
+
+  &__img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+}

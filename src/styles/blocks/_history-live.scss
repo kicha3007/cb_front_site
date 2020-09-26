@@ -105,6 +105,7 @@
   &__content {
     z-index: 5;
     position: relative;
+    max-width: 350px;
     @include phones {
         display: flex;
       flex-direction: column;

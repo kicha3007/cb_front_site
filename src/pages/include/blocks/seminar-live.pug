@@ -1,0 +1,28 @@
+include decor-live
+
+mixin seminar-live(data)
+	a(href="#").seminar-live&attributes(attributes)
+		.seminar-live__shadow.seminar-live__shadow_pos_left
+		.seminar-live__container
+			.seminar-live__wrap
+				.seminar-live__column.seminar-live__column_pos_1
+					.seminar-live__content
+						//.seminar-live__icon
+							+decor-live({"title": "live"})
+						.seminar-live__title
+							| Прямой эфир
+							br
+							| / 13:00
+						.seminar-live__subtitle
+						.seminar-live__name
+							| Инвестиции vs Риски. Что нужно
+							br
+							|знать начинающему инвестору
+
+
+				.seminar-live__column.seminar-live__column_pos_2
+					.seminar-live__img-box
+						img.seminar-live__img.seminar-live__img_show_desc(src="assets/img/main/microphone.png", alt='')
+
+
+

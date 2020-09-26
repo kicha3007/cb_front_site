@@ -1,0 +1,218 @@
+.seminar-page {
+  &__row {
+    display: flex;
+    @include phones {
+        flex-wrap: wrap;
+    }
+  }
+
+  &__column {
+    position: relative;
+    width: 50%;
+    @include phones {
+        width: 100%;
+    }
+
+    &_pos_1 {
+    }
+
+    &_pos_2 {
+    }
+
+    &_count_1 {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+
+
+      &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 100%;
+        width: 2000px;
+        height: 100%;
+        background: #8c25ee;
+        @include phones {
+          left: -20px;
+        }
+      }
+    }
+
+    &_count_2 {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+
+
+
+      &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 100%;
+        width: 2000px;
+        height: 100%;
+        background: url("../img/main/our-work.png") repeat-x top left;
+      }
+    }
+
+    &_count_3 {
+      min-height: 550px;
+      @include laptop {
+        min-height: 453px;
+      }
+      @include phones {
+        min-height: 392px;
+      }
+      &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 100%;
+        width: 2000px;
+        height: 100%;
+        background: url("../img/main/photozone.png") repeat-x top right;
+      background-size: 722px 100%;
+      }
+
+
+    }
+
+    &_count_4 {
+      min-height: 550px;
+      @include laptop {
+        min-height: 453px;
+      }
+      @include phones {
+          min-height: 400px;
+      }
+
+    }
+
+
+
+
+  }
+
+
+
+
+
+
+  &__item {
+    //flex-grow: 1;
+    position: relative;
+
+    &_pos_1 {
+      min-height: 453px;
+      @include phones {
+          min-height: 375px;
+      }
+
+
+      &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 100%;
+        width: 2000px;
+        height: 100%;
+        background: linear-gradient(0deg, #FEBA36 16.64%, #FEDC32 83.56%), #FEDD30;
+        @include phones {
+          left: -20px;
+        }
+      }
+
+
+    }
+
+    &_pos_2 {
+      min-height: 569px;
+      @include laptop {
+        min-height: 453px;
+      }
+      @include phones {
+        min-height: 445px;
+      }
+
+
+      &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 100%;
+        width: 2000px;
+        height: 100%;
+        background: #5C7EFF;
+        @include phones {
+          left: -20px;
+        }
+      }
+
+
+    }
+    &_pos_3 {
+      min-height: 630px;
+      @include laptop {
+        min-height: 453px;
+      }
+      @include phones {
+        min-height: 399px;
+
+      }
+
+
+      &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 100%;
+        width: 2000px;
+        height: 100%;
+        background: #8C25EE;
+        @include phones {
+          left: -20px;
+        }
+
+      }
+
+
+
+
+    }
+    &_pos_4 {
+      min-height: 392px;
+      @include laptop {
+        min-height: 453px;
+      }
+      @include phones {
+        min-height: 392px;
+      }
+
+
+
+
+    }
+
+
+
+
+
+
+  }
+}
+
+

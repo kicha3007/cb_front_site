@@ -22,7 +22,7 @@
     &_count_1 {
       min-height: 453px;
       @include phones {
-      
+
         width: 100%;
       }
 
@@ -56,10 +56,10 @@
         position: absolute;
         top: 0;
         bottom: 0;
-        left: 100%;
+        left: 99%;
         width: 2000px;
         height: 100%;
-        background: url("../img/main/our-work.png") repeat-x top left;
+        background: #1f636b;
       }
     }
 
@@ -207,7 +207,7 @@
         left: 100%;
         width: 2000px;
         height: 100%;
-        background: url("../img/main/tetris.png") repeat-x center top ;
+        background:  #CFB4FC;
       }
 
 

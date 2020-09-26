@@ -33,7 +33,7 @@
     top: 0;
     bottom: 0;
     left: 0;
-    width: 979px;
+    width: 725px;
     height: 100%;
     background: #FFD354 url("../img/main/flash.png") no-repeat top right;
     background-size:  cover;
@@ -45,8 +45,9 @@
       left: -20px;
       width: calc(100% + 40px);
       background-repeat: repeat-x;
-      background-size: 283%;
-      background-position: -48px -103px;
+
+      background-size: 151%;
+      background-position: -48px top;
     }
   }
 

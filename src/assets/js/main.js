@@ -2,6 +2,26 @@
 
 function DOMready() {
 
+    // Глобальные настройки
+    var globParam = (function () {
+        var sizes = {
+            DESKTOP: "1199",
+            LAPTOP: "991",
+            TABLETS: "767",
+            PHONES: "575"
+        };
+
+        return {
+            getMediaSize: function () {
+                return sizes;
+            },
+            windowWidth: function () {
+                return $(window).width();
+            }
+        }
+
+    })();
+
     $("[data-header-burger]").on("click", function () {
         $(this).toggleClass("active");
         $("[data-mobile-menu]").toggleClass("active");
@@ -98,6 +118,14 @@ function DOMready() {
         overlayAllTransparent.removeClass("active");
 
     }
+
+    if (globParam.windowWidth() < globParam.getMediaSize().PHONES) {
+
+        $("[data-seminar-page-column=\"1\"]").append($("[data-seminar-item-pos=\"3\"]"));
+        $("[data-seminar-page-column=\"2\"]").prepend($("[data-seminar-item-pos=\"2\"]"));
+
+    }
+
 
 }
 

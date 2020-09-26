@@ -92,7 +92,8 @@
     font-size: 17px;
     color: #ffffff;
     line-height: 1.5;
-    max-width: 400px;
+    max-width: 450px;
+
     @include tablets {
       font-size: 14px;
     }
