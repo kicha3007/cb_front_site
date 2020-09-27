@@ -1,16 +1,6 @@
 extend include/template_base
 
-
-include include/blocks/seminar-screen
-include include/blocks/seminar-brain
-include include/blocks/seminar-habit
-include include/blocks/seminar-live
-include include/blocks/seminar-photo
-include include/blocks/seminar-say
-include include/blocks/seminar-who
-include include/blocks/seminar-fight
-
-
+include include/blocks/main-form
 
 
 block variables
@@ -18,26 +8,22 @@ block variables
 		var title = 'Банк России';
 
 block content
-	.seminar-page
-		.seminar-page__wrap
-			.seminar-page__top
-				+seminar-screen()
-			.seminar-page__container.main-container
-				.seminar-page__row.seminar-page__row_pos_1
-					.seminar-page__column.seminar-page__column_pos_1.seminar-page__column_count_1(data-seminar-page-column="1")
-						.seminar-page__item.seminar-page__item_pos_1
-							+seminar-live()
-						.seminar-page__item.seminar-page__item_pos_2(data-seminar-item-pos="2")
-							+seminar-fight()
-					.seminar-page__column.seminar-page__column_pos_2.seminar-page__column_count_2(data-seminar-page-column="2")
-						.seminar-page__item.seminar-page__item_pos_3(data-seminar-item-pos="3")
-							+seminar-who()
-						.seminar-page__item.seminar-page__item_pos_4
-							+seminar-habit()
+	.callback
+		.callback__container.main-container
+			.callback__wrap
+				.callback__top
+					.callback__title Обратная связь
+					.callback__desc
+						| Задать вопрос по работе сайта или направить свои замечания и предложения, вы можете, заполнив форму обратной связи.
+				.callback__bottom
+					.callback__column.callback__column_pos_1
+
+						+main-form()
+
+					.callback__column.callback__column_pos_2
+						.callback__img-box
+							img(src="assets/img/main/phone.png", alt='').callback__img
+						
 
 
-				.seminar-page__row.seminar-page__row_pos_2
-					.seminar-page__column.seminar-page__column_pos_1.seminar-page__column_count_3
-						+seminar-photo()
-					.seminar-page__column.seminar-page__column_pos_2.seminar-page__column_count_4
-						+seminar-brain()
+

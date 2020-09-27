@@ -17,6 +17,7 @@
   }
   &__main-title {
     font-weight: 800;
+    width: 100%;
     font-size: 50px;
     line-height: 1.4;
     text-align: center;
@@ -48,6 +49,7 @@
     max-width: 885px;
     display: inline-block;
     line-height: 1.6;
+    width: 100%;
     @include tablets {
       font-weight: 500;
       font-size: 14px;

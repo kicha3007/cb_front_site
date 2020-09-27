@@ -100,46 +100,104 @@
       <!--if(typeof titlePage !== "undefined" && titlePage)-->
       <!--	h1.all-page-title #{titlePage}-->
       <main class="main">
-        <div class="callback">
-          <div class="callback__container main-container">
-            <div class="callback__wrap">
-              <div class="callback__top">
-                <div class="callback__title">Обратная связь</div>
-                <div class="callback__desc">Задать вопрос по работе сайта или направить свои замечания и предложения, вы можете, заполнив форму обратной связи.</div>
+        <div class="game-page" data-game-page>
+          <div class="game-page__container main-container">
+            <div class="game-page__top">
+              <div class="game-page__main-title">
+                Полезные
+                финансовые
+                привычки
               </div>
-              <div class="callback__bottom">
-                <div class="callback__column callback__column_pos_1">
-                  <div class="main-form">
-                    <div class="main-form__container">
-                      <div class="main-form__wrap">
-                        <form class="main-form__content" data-main-form="data-main-form">
-                          <div class="main-form__form">
-                            <div class="main-form__input-wrap" data-main-form-input-wrap="data-main-form-input-wrap">
-                              <input class="main-form__input" placeholder="Имя и Фамилия" type="text" data-main-form-input="name"/>
-                            </div>
-                            <div class="main-form__input-wrap" data-main-form-input-wrap="data-main-form-input-wrap">
-                              <input class="main-form__input" placeholder="E-mail" type="email" data-main-form-input="email"/>
-                            </div>
-                            <div class="main-form__input-wrap" data-main-form-input-wrap="data-main-form-input-wrap">
-                              <textarea class="main-form__input main-form__input_textarea" placeholder="Сообщение" type="text" data-main-form-input="textarea"></textarea>
-                            </div>
-                            <div class="main-form__checkbox" data-main-form-input-wrap="data-main-form-input-wrap">
-                              <label class="main-checkbox" data-main-form-input="checkbox">
-                                <input class="main-checkbox__default" type="checkbox" name="AGREE" checked="checked" required=""/><span class="main-checkbox__pseudo"></span><span class="main-checkbox__text">Предоставляю своё согласие на обработку предоставленных мной персональных данных на следующих условиях: и дана активная ссылка на согласие</span>
-                              </label>
-                              <div class="main-form__btn-wrap">
-                                <button class="main-form__btn btn" data-main-form-btn="data-main-form-btn">Отправить</button>
-                              </div>
-                            </div>
-                          </div>
-                        </form>
-                      </div>
-                    </div>
+              <div class="game-page__subtitle">Какую вам стоит завести?</div>
+            </div>
+            <div class="game-page__wrap">
+              <div class="game-page__inner-wrap"><a class="game-page__game-wrap" href="#modal-game-random" data-fancybox=""><img class="game-page__game-img" src="assets/img/random/dummy.png" alt=""></a>
+                <div class="game-page__game-wrap-mobile">
+                  <div class="game-page__game-content-mobile">
+                    <div class="game-page__game-mobile-img-box"><img class="game-page__game-mobile-img" src="assets/img/main/game-mobile.svg" alt=""></div>
+                    <div class="game-page__game-mobile-title">Для игры в полезные  финансовые привычки<br>разверите экран</div>
                   </div>
                 </div>
-                <div class="callback__column callback__column_pos_2">
-                  <div class="callback__img-box"><img class="callback__img" src="assets/img/main/phone.png" alt=""></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="game-page" data-game-page>
+          <div class="game-page__container main-container">
+            <div class="game-page__top">
+              <div class="game-page__main-title">
+                Полезные
+                финансовые
+                привычки 2
+              </div>
+              <div class="game-page__subtitle">Какую вам стоит завести?</div>
+            </div>
+            <div class="game-page__wrap">
+              <div class="game-page__inner-wrap"><a class="game-page__game-wrap" href="#random-screen" data-fancybox=""><img class="game-page__game-img" src="assets/img/random/dummy.png" alt=""></a>
+                <div class="game-page__game-wrap-mobile">
+                  <div class="game-page__game-content-mobile">
+                    <div class="game-page__game-mobile-img-box"><img class="game-page__game-mobile-img" src="assets/img/main/game-mobile.svg" alt=""></div>
+                    <div class="game-page__game-mobile-title">Для игры в полезные  финансовые привычки<br>разверите экран</div>
+                  </div>
                 </div>
+              </div>
+            </div>
+          </div>
+          <div id="test-box">
+            <div id="inner-test-box"></div>
+          </div>
+          <div id="game_script"></div>
+          <div class="modal-game" id="modal-game">
+            <div class="pre-loader">
+              <h3 class="title">LOADING...</h3>
+              <div class="progress-bar">
+                <div class="fill" style="width:20%;">10%</div>
+              </div>
+            </div>
+            <div id="outergameBox">
+              <div id="gameBox">
+                <div id="gameContainer"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="random-step" id="modal-game-random">
+          <div class="random-step__container">
+            <div class="random-step__wrap">
+              <div class="random-step__top">
+                <div class="random-step__content">
+                  <div class="random-step__title">Вести учет доходов и расходов</div>
+                  <div class="random-step__desc">
+                    <p>Учет расходов и доходов поможет понять, на что уходят деньги, каких трат можно было бы избежать и какую сумму с зарплаты вы могли бы откладывать, чтобы накопить на крупную покупку.</p>
+                    <p>А делать это можно как угодно – с помощью сервисов финансового планирования, простой таблицы в Excel, в банковском приложении или в записной книжке.</p>
+                    <p>Узнайте больше о финансовом планировании на<a href=""><b>fincult.info</b></a></p>
+                  </div>
+                </div>
+              </div>
+              <div class="random-step__bottom">
+                <div class="random-step__column random-step__column_pos_1">
+                  <div class="random-step__btn-wrap">
+                    <div class="random-step__btn">Сгенерировать еще</div>
+                  </div>
+                </div>
+                <div class="random-step__column random-step__column_pos_2">
+                  <div class="random-step__soc">
+                    <div class="random-step__soc-list"><a class="random-step__soc-item" href="#"><img class="random__img" src="assets/img/random/fb.svg" alt=""/></a><a class="random-step__soc-item" href="#"><img class="random__img" src="assets/img/random/vk.svg" alt=""/></a><a class="random-step__soc-item" href="#"><img class="random__img" src="assets/img/random/ok.svg" alt=""/></a><a class="random-step__soc-item" href="#"><img class="random__img" src="assets/img/random/tw.svg" alt=""/></a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="random-step random-step_bg_first" id="random-screen">
+          <div class="random-step__container">
+            <div class="random-step__wrap random-step__wrap_bg_first">
+              <div class="random-step__content">
+                <div class="random-step__pretitle">Моя новая полезная привычка:</div>
+                <div class="random-step__main-title">Вести учет доходов<br/>и расходов</div>
+              </div>
+              <div class="random-step__btn-wrap-white">
+                <div class="random-step__btn-white">Сгенерировать</div>
               </div>
             </div>
           </div>

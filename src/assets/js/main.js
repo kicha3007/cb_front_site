@@ -126,6 +126,9 @@ function DOMready() {
 
     }
 
+    $("[data-random-main-wrap]").outerHeight(innerHeight);
+    $("[data-random-main-wrap]").outerWidth(innerWidth);
+
 
 }
 

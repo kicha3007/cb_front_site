@@ -1,0 +1,83 @@
+extend include/template_base
+
+include include/blocks/random-step
+include include/blocks/random-screen
+
+
+
+
+
+block variables
+	-
+		var title = 'Банк России';
+
+block content
+	.game-page(data-game-page)
+		.game-page__container.main-container
+			.game-page__top
+				.game-page__main-title
+					| Полезные
+					| финансовые
+					| привычки
+				.game-page__subtitle
+					| Какую вам стоит завести?
+			.game-page__wrap
+				.game-page__inner-wrap
+					a.game-page__game-wrap(  href="#modal-game-random"  data-fancybox='')
+						img(src="assets/img/random/dummy.png", alt='').game-page__game-img
+
+					.game-page__game-wrap-mobile
+						.game-page__game-content-mobile
+							.game-page__game-mobile-img-box
+								img(src="assets/img/main/game-mobile.svg", alt='').game-page__game-mobile-img
+							.game-page__game-mobile-title
+								| Для игры в полезные  финансовые привычки
+								br
+								| разверите экран
+
+
+	.game-page(data-game-page)
+		.game-page__container.main-container
+			.game-page__top
+				.game-page__main-title
+					| Полезные
+					| финансовые
+					| привычки 2
+				.game-page__subtitle
+					| Какую вам стоит завести?
+			.game-page__wrap
+				.game-page__inner-wrap
+					a.game-page__game-wrap(  href="#random-screen"  data-fancybox='')
+						img(src="assets/img/random/dummy.png", alt='').game-page__game-img
+
+					.game-page__game-wrap-mobile
+						.game-page__game-content-mobile
+							.game-page__game-mobile-img-box
+								img(src="assets/img/main/game-mobile.svg", alt='').game-page__game-mobile-img
+							.game-page__game-mobile-title
+								| Для игры в полезные  финансовые привычки
+								br
+								| разверите экран
+
+
+		#test-box
+			#inner-test-box
+		#game_script
+		#modal-game.modal-game()
+			.pre-loader
+				h3.title LOADING...
+				.progress-bar
+					.fill(style='width:20%;') 10%
+			#outergameBox
+				#gameBox
+					#gameContainer
+	+random-step()
+	+random-screen()
+
+
+
+
+
+
+
+
