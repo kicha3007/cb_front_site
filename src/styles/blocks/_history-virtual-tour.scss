@@ -16,6 +16,8 @@
     left: 0;
     right: 0;
     background: #000;
+    width: 2000px;
+    height: 100%;
     opacity: 0;
     transition: .2s ease;
     z-index: 2;
@@ -40,7 +42,7 @@
     .history-virtual-tour__desc {
       text-decoration: underline;
     }
-    .history-screen__shadow {  opacity: 0.2;}
+    .history-virtual-tour__shadow {  opacity: 0.2;}
   }
 
 

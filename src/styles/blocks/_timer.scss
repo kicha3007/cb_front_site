@@ -1,0 +1,72 @@
+.timer {
+  display: inline-block;
+  &__wrap {
+    display: inline-block;
+  }
+  &__title {
+    color: #005eff;
+    font-size: 15px;
+    font-weight: 700;
+
+  }
+  .timerDisplay {
+    display: flex;
+    margin:  0 -55px;
+  }
+  .displaySection {
+    margin-right: 12px;
+
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+
+
+  }
+  .numberDisplay {
+    position: relative;
+    color: #FFFFFF;
+
+
+    display: block;
+
+
+    font-weight: 900;
+    font-size: 130px;
+    line-height: 1;
+    margin:  0 35px;
+    @include laptop {
+      font-size: 76px;
+      margin: 0 15px;
+    }
+    @include tablets {
+      font-size: 50px;
+      margin: 0 1px;
+      min-width: 65px;
+    }
+
+  }
+  .periodDisplay {
+
+    display: block;
+
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 120.3%;
+    /* or 29px */
+
+    text-align: center;
+
+    /* white */
+
+    color: #FFFFFF;
+    @include tablets {
+      font-size: 14px;
+      margin-top: 5px;
+    }
+
+
+
+  }
+}

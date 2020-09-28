@@ -5,6 +5,7 @@
 
 .random-step {
   flex-grow: 1;
+  overflow: hidden;
 
   background: url("../img/random/bg_2.jpg") no-repeat center;
   display: flex;
@@ -26,7 +27,8 @@
     background: url("../img/random/bg_1.jpg") no-repeat center !important;
 
   }
-  @include tablets {
+  @include laptop {
+    overflow: auto;
     padding: 20px;
   }
 

@@ -83,20 +83,20 @@
           order: 2;
       }
 
-      &::before {
-        content: '';
-        display: block;
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        right: 100%;
-        width: 2000px;
-        height: 100%;
-        background: linear-gradient(0deg, #FEBA36 1.84%, #FEDC32 98.73%), #FEDD30;
-        @include phones {
-          left: -20px;
-        }
-      }
+      //&::before {
+      //  content: '';
+      //  display: block;
+      //  position: absolute;
+      //  top: 0;
+      //  bottom: 0;
+      //  right: 100%;
+      //  width: 2000px;
+      //  height: 100%;
+      //  background: linear-gradient(254.7deg, #00BDE7 5.93%, #A5DEFF 92.14%);
+      //  transform: rotate(-180deg);        @include phones {
+      //    left: -20px;
+      //  }
+      //}
 
     }
 
@@ -106,20 +106,20 @@
         order: 1;
       }
 
-      &::before {
-        content: '';
-        display: block;
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 100%;
-        width: 2000px;
-        height: 100%;
-        background: #D0A4E3;
-        @include phones {
-          left: -20px;
-        }
-      }
+      //&::before {
+      //  content: '';
+      //  display: block;
+      //  position: absolute;
+      //  top: 0;
+      //  bottom: 0;
+      //  left: 100%;
+      //  width: 2000px;
+      //  height: 100%;
+      //  background: #D0A4E3;
+      //  @include phones {
+      //    left: -20px;
+      //  }
+      //}
 
 
 
@@ -171,20 +171,7 @@
       }
 
 
-      &::before {
-        content: '';
-        display: block;
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        right: 100%;
-        width: 2000px;
-        height: 100%;
-        background: #331b78;
-        @include phones {
-          left: -20px;
-        }
-      }
+
 
 
     }
