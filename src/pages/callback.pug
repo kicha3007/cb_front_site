@@ -1,0 +1,29 @@
+extend include/template_base
+
+include include/blocks/main-form
+
+
+block variables
+	-
+		var title = 'Банк России';
+
+block content
+	.callback
+		.callback__container.main-container
+			.callback__wrap
+				.callback__top
+					.callback__title Обратная связь
+					.callback__desc
+						| Задать вопрос по работе сайта или направить свои замечания и предложения, вы можете, заполнив форму обратной связи.
+				.callback__bottom
+					.callback__column.callback__column_pos_1
+
+						+main-form()
+
+					.callback__column.callback__column_pos_2
+						.callback__img-box
+							img(src="assets/img/main/phone.png", alt='').callback__img
+						
+
+
+

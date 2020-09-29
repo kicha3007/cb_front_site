@@ -123,14 +123,24 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+    @include phones {
+        justify-content: center;
+    }
 
 
   }
   &__column {
+    @include tablets {
+      margin-top: 8px;
+      margin-bottom: 8px;
+    }
     &_pos_1 {
       max-width: 360px;
       flex-grow: 1;
       padding-right: 15px;
+
+
 
     }
     &_pos_2 {

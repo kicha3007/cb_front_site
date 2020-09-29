@@ -22,7 +22,8 @@
     &_count_1 {
       min-height: 453px;
       @include phones {
-
+       height: 453px;
+        min-height: auto;
         width: 100%;
       }
 
@@ -47,7 +48,8 @@
       @include phones {
 
         width: 100%;
-        min-height: 275px;
+        height: 275px;
+        min-height: auto;
       }
 
       &::before {
@@ -81,6 +83,8 @@
       min-height: 436px;
       @include phones {
           order: 2;
+        height: 436px;
+        min-height: auto;
       }
 
       //&::before {
@@ -102,8 +106,11 @@
 
     &_count_6 {
       min-height: 436px;
+
       @include phones {
         order: 1;
+        height: 436px;
+        min-height: auto;
       }
 
       //&::before {
@@ -139,7 +146,8 @@
     &_pos_1 {
       min-height: 453px;
       @include phones {
-          min-height: 375px;
+          height: 375px;
+        min-height: auto;
       }
 
 
@@ -167,7 +175,8 @@
         min-height: 453px;
       }
       @include phones {
-        min-height: 445px;
+        min-height: 453px;
+
       }
 
 
@@ -181,7 +190,8 @@
         min-height: 453px;
       }
       @include phones {
-        min-height: 375px;
+        height: 375px;
+        min-height: auto;
       }
 
 
@@ -204,7 +214,8 @@
     &_pos_4 {
       min-height: 496px;
       @include laptop {
-        min-height: 453px;
+        height: 453px;
+        min-height: auto;
       }
 
       &::before {

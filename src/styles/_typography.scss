@@ -1,7 +1,6 @@
 
 body {
-	font-weight: 400;
-	font-family: "CoText-Regular", sans-serif;
+
 }
 
 
@@ -56,7 +55,7 @@ body {
 	p {
 		font-size: 14px;
 		font-weight: 300;
-		font-family: 'CoText-Light', sans-serif;
+
 		line-height: 1.42;
 		@include phones {
 			font-size: 14px;

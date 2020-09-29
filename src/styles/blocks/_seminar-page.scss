@@ -25,6 +25,7 @@
       flex-direction: column;
 
 
+
       &::before {
         content: '';
         display: block;
@@ -78,8 +79,8 @@
         right: 100%;
         width: 2000px;
         height: 100%;
-        background: url("../img/main/photozone.png") repeat-x top right;
-      background-size: 722px 100%;
+background: #9CEFFF;
+        background-size: 722px 100%;
       }
 
 
@@ -141,7 +142,8 @@
         min-height: 453px;
       }
       @include phones {
-        min-height: 445px;
+        height: 445px;
+        min-height:auto ;
       }
 
 
@@ -168,7 +170,8 @@
         min-height: 453px;
       }
       @include phones {
-        min-height: 399px;
+        height: 399px;
+        min-height:auto ;
 
       }
 
@@ -199,7 +202,8 @@
         min-height: 453px;
       }
       @include phones {
-        min-height: 392px;
+        height: 392px;
+        min-height: auto;
       }
 
 
