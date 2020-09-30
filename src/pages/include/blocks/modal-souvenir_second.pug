@@ -1,0 +1,30 @@
+include modal-form
+
+mixin modal-souvenir_second(data)
+	#modal-souvenir(data-modal-main-wrap).modal-souvenir&attributes(attributes)
+		.modal-souvenir__container.main-container
+			.modal-souvenir__column.modal-souvenir__column_pos_0
+				.modal-souvenir__img-box
+					img(src="assets/img/main/modal_2.png", alt='').modal-souvenir__img
+			.modal-souvenir__top
+				.modal-souvenir__title.modal-souvenir__title_size_min
+					|Банк России подготовил для вас сувениры
+					br
+					| на память: стикерпак для Telegram и заставки
+					br
+					| для гаджетов, заряженные на финансовый успех.
+				.modal-souvenir__desc
+					| Чтобы получить их укажите вашу почту.
+
+			.modal-souvenir__wrap
+				.modal-souvenir__close(data-modal-gift-close)
+					img(src="assets/img/main/modal-close.png", alt='').modal-souvenir__close-img
+
+				.modal-souvenir__column.modal-souvenir__column_pos_1
+					+modal-form()
+				.modal-souvenir__column.modal-souvenir__column_pos_2
+					.modal-souvenir__img-box.modal-souvenir__img-box_mod_2
+						img(src="assets/img/main/modal_2.png", alt='').modal-souvenir__img.modal-souvenir__img_mod_2
+
+			.modal-souvenir__note
+				| Выполните все пункты программы Дня открытых дверей – и вам достанется секретный суперприз! 

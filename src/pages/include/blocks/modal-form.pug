@@ -1,0 +1,19 @@
+include main-checkbox
+
+mixin modal-form(data)
+	.modal-form&attributes(attributes)
+
+		.modal-form__container
+			.modal-form__wrap
+				form.modal-form__content(data-modal-form)
+					.modal-form__form
+						.modal-form__input-wrap(data-modal-form-input-wrap)
+							input(placeholder="Имя" type="text" data-modal-form-input="name").modal-form__input
+						.modal-form__input-wrap(data-modal-form-input-wrap)
+							input(placeholder="E-mail" type="email" data-modal-form-input="email").modal-form__input
+
+						.modal-form__checkbox(data-modal-form-input-wrap)
+							+main-checkbox()(data-modal-form-input="checkbox")
+
+							.modal-form__btn-wrap
+								button.modal-form__btn.btn(data-modal-form-btn) Отправить

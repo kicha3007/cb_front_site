@@ -1,0 +1,29 @@
+include modal-form
+
+mixin modal-souvenir_one(data)
+	#modal-souvenir-gift(data-modal-main-wrap="gift").modal-souvenir&attributes(attributes)
+		.modal-souvenir__container.main-container
+			.modal-souvenir__column.modal-souvenir__column_pos_0
+				.modal-souvenir__img-box
+					img(src="assets/img/main/modal_1.png", alt='').modal-souvenir__img
+			.modal-souvenir__top
+				.modal-souvenir__title
+					|Ура! Вы - самый активный посетитель 
+					br
+					|Дня открытых дверей!
+				.modal-souvenir__desc
+					|Вас ждет диплом, а также специальный приз – декоративная банка
+					br
+					|с обрезью купюр. Приз доставляется почтой России.
+					br
+					|Чтобы получить подарки укажите ваши данные.
+
+			.modal-souvenir__wrap
+				.modal-souvenir__close(data-modal-gift-close)
+					img(src="assets/img/main/modal-close.png", alt='').modal-souvenir__close-img
+
+				.modal-souvenir__column.modal-souvenir__column_pos_1
+					+modal-form()
+				.modal-souvenir__column.modal-souvenir__column_pos_2
+					.modal-souvenir__img-box
+						img(src="assets/img/main/modal_1.png", alt='').modal-souvenir__img

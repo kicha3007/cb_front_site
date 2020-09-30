@@ -1,7 +1,11 @@
 extend include/template_base
 
-include include/blocks/main-form
+include include/blocks/modal-souvenir_one
+include include/blocks/modal-souvenir_second
 include include/blocks/decor-live
+include include/blocks/main-screen
+include include/blocks/timetable
+include include/blocks/main-box
 
 
 block variables
@@ -9,26 +13,24 @@ block variables
 		var title = 'Банк России';
 
 block content
-	.brain-page
-		.brain-page__container.main-container
-			.brain-page__wrap
-				.brain-page__column.brain-page__column_pos_1
-					.brain-page__content
-						.brain-page__main-title
-							| Мозгобойня
-						.brain-page__desc
-							p «Мозгобойня» — увлекательная интеллектуальная игра. И сегодня она будет посвящена финансовой грамотности! Соберите от 2 до 7 друзей, зарегистрируйтесь – и вперед!
-							p Каждый член команды может подключиться удаленно со своего устройства, игра длится 1 час 30 минут. Количество мест ограничено, регистрация закрывается за 15 минут до начала игры.
-					.brain-page__btn-wrap
-						a(href="#").brain-page__btn.btn Зарегистрироваться
-
-				.brain-page__column.brain-page__column_pos_2
-					.brain-page__img-box
-						img(src="assets/img/main/brain-box.png", alt='').brain-page__img
-
-
-
-
-
-
-
+	.fonts-test
+		.regular
+			| Regular 400
+			br
+			| Almost before we knew it, we had left the ground.
+		.medium
+			| Medium 500
+			br
+			| Almost before we knew it, we had left the ground.
+		.bold
+			| Bold
+			br
+			| Almost before we knew it, we had left the ground.
+		.extra-bold
+			| Extra-bold
+			br
+			| Almost before we knew it, we had left the ground.
+		.black
+			| Black
+			br
+			| Almost before we knew it, we had left the ground.

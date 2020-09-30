@@ -1,0 +1,33 @@
+extend include/template_base
+
+include include/blocks/main-form
+include include/blocks/decor-live
+
+
+block variables
+	-
+		var title = 'Банк России';
+
+block content
+	.brain-page
+		.brain-page__container.main-container
+			.brain-page__wrap
+				.brain-page__column.brain-page__column_pos_1
+					.brain-page__content
+						.brain-page__main-title.brain-page__main-title_indent_big
+							| Мозгобойня
+						.brain-page__desc-dummy
+							| К сожалению, регистрация на игру уже закрыта.
+						.brain-page__note
+							| Но на нашем сайте вас ждут другие развлечения, без регистрации и смс :)
+
+				.brain-page__column.brain-page__column_pos_2.brain-page__column_show_desc
+					.brain-page__img-box
+						img(src="assets/img/main/brain-box.png", alt='').brain-page__img
+
+
+
+
+
+
+

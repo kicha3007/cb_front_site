@@ -39,7 +39,7 @@
     background: #000;
     opacity: 0;
     transition: .2s ease;
-    z-index: 2;
+    z-index: 5;
     pointer-events: none;
     @include phones {
       display: none;

@@ -1,0 +1,20 @@
+extend include/template_base
+
+include include/blocks/modal-souvenir_one
+include include/blocks/modal-souvenir_second
+include include/blocks/decor-live
+include include/blocks/main-screen
+include include/blocks/timetable
+include include/blocks/main-box
+
+
+block variables
+	-
+		var title = 'Банк России';
+
+block content
+	+main-screen()
+	+timetable()
+	+main-box()
+
+	+modal-souvenir_one()

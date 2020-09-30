@@ -1,32 +1,33 @@
 .brain-page {
-  background: #513B8F;
+  background: #513b8f;
+
   &__wrap {
     display: flex;
     align-items: center;
     margin: 0 -20px;
     @include tablets {
-        flex-wrap: wrap;
+      flex-wrap: wrap;
     }
-
   }
+
   &__column {
     margin: 0 20px;
     width: calc(50% - 40px);
-    &_pos_1 {
 
+    &_pos_1 {
       padding-top: 120px;
       padding-bottom: 120px;
       @include laptop {
         width: calc(60% - 40px);
       }
       @include tablets {
-          width: 100%;
+        width: 100%;
         order: 2;
         padding-top: 20px;
         padding-bottom: 60px;
       }
-
     }
+
     &_pos_2 {
       @include laptop {
         width: calc(40% - 40px);
@@ -38,75 +39,106 @@
         justify-content: center;
         align-items: flex-start;
       }
-      
-
     }
-
+    &_show_desc {
+      @include tablets {
+          display: none;
+      }
+    }
   }
+
   &__content {
-
   }
+
   &__main-title {
     font-weight: 800;
     font-size: 50px;
     display: flex;
     align-items: flex-end;
     margin-bottom: 30px;
-    color: #fff;
+    color: #ffffff;
     @include tablets {
       font-size: 25px;
       margin-bottom: 25px;
     }
 
+    &_indent_big {
+      margin-bottom: 80px;
+      @include tablets {
+        margin-top: 25px;
+        margin-bottom: 20px;
+      }
+    }
   }
+
   &__desc {
     margin-bottom: 70px;
     font-size: 20px;
-
-    color: #FFFFFF;
+    color: #ffffff;
     @include tablets {
       font-size: 14px;
       margin-bottom: 50px;
     }
+
     p {
       font-size: 20px;
-      color: #FFFFFF;
+      color: #ffffff;
       margin-bottom: 25px;
       @include tablets {
         font-size: 14px;
       }
     }
-
   }
+
+  &__desc-dummy {
+    font-weight: bold;
+    font-size: 30px;
+    color: #fedd30;
+    margin-bottom: 30px;
+    @include tablets {
+      font-size: 20px;
+      margin-bottom: 25px;
+    }
+  }
+
+  &__note {
+    font-weight: normal;
+    font-size: 20px;
+    /* or 150% */
+    /* white */
+    color: #ffffff;
+    margin-bottom: 100px;
+    @include tablets {
+      font-size: 14px;
+      margin-bottom: 80px;
+    }
+  }
+
   &__btn-wrap {
     max-width: 278px;
     @include tablets {
       max-width: 241px;
     }
-
-
   }
+
   &__btn.btn {
     padding-top: 13px;
     padding-bottom: 13px;
   }
+
   &__img-box {
     max-width: 675px;
     @include tablets {
-        max-width: 390px;
+      max-width: 390px;
       transform: rotate(13deg);
       position: relative;
       right: -43px;
     }
-
-
   }
+
   &__img {
     display: block;
     max-width: 100%;
     height: auto;
-
   }
-
-
 }

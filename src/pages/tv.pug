@@ -1,0 +1,35 @@
+extend include/template_base
+
+include include/blocks/main-form
+include include/blocks/decor-live
+
+
+block variables
+	-
+		var title = 'Банк России';
+
+block content
+	.tv-page
+		.tv-page__container.main-container
+			.tv-page__wrap
+				.tv-page__content
+					.tv-page__main-title
+						| Своими словами
+					.tv-page__desc
+						| За каждой функцией Банка России стоят реальные люди. Какими инструментами можно контролировать инфляцию, как противостоять кибермошенникам, куда отправляются ветхие деньги и что таится под капотом безналичных платежей – сотрудники Банка России рассказывают о своей работе. Включите любой телевизор!
+				.tv-page__list
+					a(href="https://www.youtube.com/embed/6HtTxin3FS4" data-fancybox).tv-page__item.tv-page__item_pos_end.tv-page__item_pos_1
+						img(src="assets/img/main/tv_1.png", alt='').tv-page__img-outer
+					a(href="https://www.youtube.com/embed/6HtTxin3FS4" data-fancybox).tv-page__item.tv-page__item.tv-page__item_pos_end.tv-page__item_pos_2
+						img(src="assets/img/main/tv_2.png", alt='').tv-page__img-outer
+					a(href="https://www.youtube.com/embed/6HtTxin3FS4" data-fancybox).tv-page__item.tv-page__item_pos_3
+						img(src="assets/img/main/tv_3.png", alt='').tv-page__img-outer
+					a(href="https://www.youtube.com/embed/6HtTxin3FS4" data-fancybox).tv-page__item.tv-page__item_pos_4
+						img(src="assets/img/main/tv_4.png", alt='').tv-page__img-outer
+
+
+
+
+
+
+

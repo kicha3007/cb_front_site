@@ -1,0 +1,88 @@
+.modal-form {
+  position: relative;
+  &__wrap {
+    display: flex;
+
+  }
+
+  &__bg {
+    display: block;
+    //position: absolute;
+    top: -304px;
+
+    left:0;
+    //width: 880px;
+    //height: 900px;
+    pointer-events: none;
+
+
+  }
+
+
+
+  &__content {
+    max-width: 670px;
+  }
+
+
+
+  &__form {
+  }
+
+  &__input-wrap {
+    margin-bottom: 14px;
+    border: 1px solid transparent;
+    &.error {
+      border-color:  red;
+    }
+  }
+  //&__checkbox {
+  //  border: 1px solid transparent;
+  //  &.error {
+  //    border-color:  red;
+  //  }
+  //}
+
+
+
+  &__input {;
+    outline: none;
+    width: 100%;
+    padding: 13px 20px;
+    height: 50px;
+    border: none;
+    font-weight: normal;
+    background: #ffffff;
+    border-radius: 5px;
+    font-size: 16px;
+    line-height: 26px;
+    /* identical to box height, or 162% */
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.04em;
+    /* Gray 3 */
+    color: #828282;
+    @include phones {
+      font-size: 14px;
+    }
+    &_textarea {
+      height: 174px;
+      margin-bottom: 25px;
+      @include phones {
+        margin-bottom: 15px;
+      }
+    }
+  }
+
+  &__btn-wrap {
+    max-width: 258px;
+    margin-top: 28px;
+    @include phones {
+      margin-top: 30px;
+    }
+  }
+
+  &__btn.btn {
+    padding: 15px 15px 14px;
+  }
+}
