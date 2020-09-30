@@ -21,8 +21,7 @@
     right: 0;
     width: 1000px;
     height: 100%;
-    background: linear-gradient(254.7deg, #00BDE7 5.93%, #A5DEFF 92.14%);
-    transform: rotate(-180deg);
+    background: linear-gradient(253.8deg, #DF00AE 11.23%, #FF99E9 97.77%);    transform: rotate(-180deg);
     @include phones {
       right: -20px
     }
@@ -62,7 +61,7 @@
 
 
   &__container {
-    height: 100%;
+
     width: 100%;
 
   }
@@ -89,7 +88,7 @@
       align-items: flex-end;
       padding-bottom: 50px;
       @include laptop {
-          order: 2;
+
         display: block;
         height: auto;
         padding-bottom: 45px;
@@ -112,11 +111,13 @@
       top: 0px;
       right: -40px;
 
+      display: none;
+
       @include desktop {
           position: static;
       }
       @include laptop {
-        order: 1;
+
         align-items: flex-start;
         margin: 0 auto;
         padding-bottom: 0;

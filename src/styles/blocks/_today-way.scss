@@ -8,8 +8,14 @@
   @include desktop {
     padding-left: 50px;
   }
+  @include laptop {
+    padding-bottom: 0;
+  }
   @include tablets {
     padding-left: 30px;
+  }
+  @include phones {
+    padding: 40px 0 0;
   }
 
   &:before {
@@ -21,8 +27,7 @@
     left: 0;
     width: 1000px;
     height: 100%;
-    background: linear-gradient(253.8deg, #DF00AE 11.23%, #FF99E9 97.77%);
-    transform: rotate(-180deg);
+    background: linear-gradient(254.7deg, #0041E7 5.93%, #88A9FF 92.14%);    transform: rotate(-180deg);
     @include phones {
       left: -20px
     }
@@ -58,6 +63,13 @@
 &__content {
   position: relative;
   z-index: 5;
+  max-width: 320px;
+  @include desktop {
+      max-width: 230px;
+  }
+  @include laptop {
+    max-width: 320px;
+  }
 }
 
 
@@ -75,9 +87,7 @@
     .today-way__shadow {  opacity: 0.2;}
   }
 
-  @include phones {
-    padding: 65px 0 30px;
-  }
+
 
   &__container {
   }
@@ -86,25 +96,38 @@
     display: flex;
     align-items: center;
     margin: 0 -50px;
-    @include tablets {
-      margin: 0 -25px;
-    }
-    @include phones {
-      flex-wrap: wrap;
+    @include laptop {
+        flex-wrap: wrap;
+      margin: 0;
+
     }
   }
 
   &__column {
     margin: 0 50px;
     @include tablets {
-      margin: 0 25px;
+      margin: 0 0;
     }
 
     &_pos_1 {
-      display: none;
+      @include laptop {
+        margin-bottom: 20px !important;
+      }
+
     }
 
     &_pos_2 {
+      position: absolute;
+      right: -135px;
+      bottom: 0;
+      z-index: 4;
+      @include laptop {
+          position: static;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+      }
+
 
 
     }
@@ -136,10 +159,11 @@
   }
 
   &__img-box {
-    max-width: 700px;
-    @include phones {
-      width: 420px;
+    max-width: 278px;
+    @include laptop {
+      max-width: 210px;
     }
+
   }
 
   &__img {

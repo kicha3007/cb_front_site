@@ -1,5 +1,5 @@
 .today-finance-market {
-  background: #8c25ee;
+
   height: 100%;
   padding: 30px 0 50px;
   position: relative;
@@ -7,6 +7,21 @@
   z-index: 5;
   @include phones {
     padding: 40px 0 20px;
+  }
+
+
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 1000px;
+    height: 100%;
+    background: linear-gradient(283.44deg, #4B0093 18.1%, #AE25EE 91.28%);    @include phones {
+      right: -20px
+    }
   }
 
 
@@ -54,18 +69,35 @@
     display: flex;
     align-items: flex-end;
     height: 100%;
+    @include tablets {
+        align-items: flex-start;
+    }
   }
 
   &__column {
     &_pos_1 {
-      display: none;
-      order: 2;
+      position: absolute;
+      top:0;
+      right: 0;
+      @include tablets {
+        top: auto;
+        bottom: 0;
+        right: 0;
+        overflow: hidden;
+
+      }
+      @include phones {
+          right: -20px;
+      }
+
+
+
       }
 
 
     &_pos_2 {
       @include phones {
-        order: 1;
+
       }
     }
   }
@@ -74,6 +106,9 @@
 
     position: relative;
     z-index: 5;
+    @include tablets {
+      max-width: 240px;
+    }
   }
 
   &__title {
@@ -84,6 +119,7 @@
     margin-bottom: 20px;
     @include tablets {
       font-size: 25px;
+
     }
   }
 
@@ -104,12 +140,25 @@
   }
 
   &__img-box {
-    max-width: 580px;
+    max-width: 280px;
+    height: 350px;
+    margin-top: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    @include tablets {
+        height: auto;
+      margin-right: -56px;
+      width: 230px;
+      justify-content: flex-start;
+    }
+
   }
 
   &__img {
     display: block;
     max-width: 100%;
     height: auto;
+
   }
 }
