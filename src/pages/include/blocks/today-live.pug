@@ -10,12 +10,25 @@ mixin today-live(data)
 						//.today-live__icon
 							+decor-live({"title": "live"})
 						.today-live__title
-							| Прямой эфир
+							| Прямой эфир /  &#32; &#32;
 							br
-							| / 15:00
-						//.today-live__subtitle
-							| «Мегарегулятор финансового рынка в 21 веке: вызовы, люди, технологии»
-						.today-live__name Люди в Банке России
+							span.today-live__time
+								| &#32; 15:00 &#32;
+							span.today-live__icon
+								+decor-live({"title": "live"})
+						.today-live__name
+							| Кто и как работает
+							br
+							| в Банке России
+						.today-live__person
+							.today-live__person-img-box
+								img(src="assets/img/main/live_2.png", alt='').today-live__person-img
+							.today-live__person-desc
+								| Прямой эфир с первым
+								br
+								| заместителем Председателя Банка
+								br
+								b Сергеем Швецовым
 
 
 				.today-live__column.today-live__column_pos_2

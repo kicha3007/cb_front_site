@@ -1,3 +1,11 @@
+@media screen and (max-width: 1450px) {
+  .seminar-who__img-box {
+    max-width: 470px;
+    right: -20px;
+
+  }
+}
+
 .seminar-who {
   background: #8C25EE;
   height: 100%;
@@ -65,7 +73,7 @@
 
   }
   &__content {
-    z-index: 6;
+    z-index: 12;
     position: relative;
     @include phones {
       max-width: 305px;
@@ -109,12 +117,13 @@
 
   }
   &__desc {
-    max-width: 600px;
+
     font-weight: 500;
     font-size: 17px;
     color: #ffffff;
     line-height: 1.5;
     margin-bottom: 45px;
+    max-width: 340px;
 
     @include tablets {
       font-size: 14px;
@@ -123,17 +132,23 @@
 
   }
   &__img-box {
-    max-width: 377px;
+    max-width: 660px;
     position: absolute;
 
     z-index: 5;
-    bottom: 20px;
-    right: 50px;
+    bottom: 45px;
+    right: -204px;
+
     @include laptop {
-      max-width: 222px;
+
+      max-width: 275px;
+
+
     }
     @include phones {
-      right: 30px;
+      max-width: 275px;
+      right: -21px;
+      bottom: 25px;
     }
 
 
@@ -147,3 +162,4 @@
 
   }
 }
+

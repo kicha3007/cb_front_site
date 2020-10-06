@@ -62,12 +62,15 @@
 
 &__content {
   position: relative;
-  z-index: 5;
+  z-index: 12;
   max-width: 320px;
   @include desktop {
       max-width: 230px;
   }
   @include laptop {
+    max-width: none;
+  }
+  @include phones {
     max-width: 320px;
   }
 }
@@ -105,7 +108,7 @@
 
   &__column {
     margin: 0 50px;
-    @include tablets {
+    @include laptop {
       margin: 0 0;
     }
 
@@ -161,7 +164,7 @@
   &__img-box {
     max-width: 278px;
     @include laptop {
-      max-width: 210px;
+      max-width: 183px;
     }
 
   }

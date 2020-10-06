@@ -2,7 +2,7 @@
   &__row {
     display: flex;
     @include phones {
-        flex-wrap: wrap;
+      flex-wrap: wrap;
     }
   }
 
@@ -10,7 +10,7 @@
     position: relative;
     width: 50%;
     @include phones {
-        width: 100%;
+      width: 100%;
     }
 
     &_pos_1 {
@@ -20,23 +20,17 @@
     }
 
     &_count_1 {
-      min-height: 453px;
+      height: 453px;
       @include phones {
-       height: 453px;
-        min-height: auto;
         width: 100%;
       }
-
-
     }
 
     &_count_2 {
-      min-height: 453px;
+      height: 453px;
       @include phones {
-
         width: 100%;
         height: 275px;
-        min-height: auto;
       }
 
       &::before {
@@ -56,87 +50,40 @@
       display: flex;
       flex-wrap: wrap;
       flex-direction: column;
-
     }
 
     &_count_4 {
       display: flex;
       flex-wrap: wrap;
       flex-direction: column;
-
     }
 
     &_count_5 {
-      min-height: 436px;
-      @include phones {
+      height: 436px;
 
-        height: 436px;
-        min-height: auto;
-      }
-
-      //&::before {
-      //  content: '';
-      //  display: block;
-      //  position: absolute;
-      //  top: 0;
-      //  bottom: 0;
-      //  right: 100%;
-      //  width: 2000px;
-      //  height: 100%;
-      //  background: linear-gradient(254.7deg, #00BDE7 5.93%, #A5DEFF 92.14%);
-      //  transform: rotate(-180deg);        @include phones {
-      //    left: -20px;
-      //  }
-      //}
 
     }
 
     &_count_6 {
-      min-height: 436px;
-
+      height: 436px;
       @include phones {
-
-        min-height: 442px;
-
+       height: 442px;
       }
 
-      //&::before {
-      //  content: '';
-      //  display: block;
-      //  position: absolute;
-      //  top: 0;
-      //  bottom: 0;
-      //  left: 100%;
-      //  width: 2000px;
-      //  height: 100%;
-      //  background: #D0A4E3;
-      //  @include phones {
-      //    left: -20px;
-      //  }
-      //}
-
-
-
     }
-
   }
-
-
-
-
-
 
   &__item {
     flex-grow: 1;
     position: relative;
 
     &_pos_1 {
-      min-height: 453px;
+      height: 453px;
       @include phones {
-          height: 375px;
-        min-height: auto;
-      }
+        height: 447px;
+        order: 1;
 
+      }
 
       &::before {
         content: '';
@@ -147,41 +94,34 @@
         right: 100%;
         width: 2000px;
         height: 100%;
-        background: linear-gradient(0deg, #FEBA36 16.64%, #FEDC32 83.56%), #FEDD30;
+        background: linear-gradient(0deg, #feba36 16.64%, #fedc32 83.56%), #fedd30;
         @include phones {
           left: -20px;
         }
       }
-
-
     }
 
     &_pos_2 {
-      min-height: 725px;
+     height: 725px;
       @include laptop {
-        min-height: 453px;
+       height: 453px;
       }
-
       @include phones {
-        min-height: 453px;
-
+       height: 453px;
+        order: 3;
       }
-
-
-
-
-
     }
+
     &_pos_3 {
-      min-height: 682px;
+      height: 682px;
       @include laptop {
-        min-height: 453px;
+        height: 453px;
       }
       @include phones {
         height: 375px;
-        min-height: auto;
-      }
+        order: 2;
 
+      }
 
       &::before {
         content: '';
@@ -192,18 +132,18 @@
         left: 100%;
         width: 2000px;
         height: 100%;
-        background:  #CFB4FC;
+        background: #cfb4fc;
       }
-
-
-
-
     }
+
     &_pos_4 {
-      min-height: 496px;
+      height: 496px;
       @include laptop {
         height: 453px;
-        min-height: auto;
+
+      }
+      @include phones {
+        order: 4;
       }
 
       &::before {
@@ -216,17 +156,9 @@
         width: 2000px;
         height: 100%;
         background: url("../img/main/flash.png") repeat-x top right;
-      transform: scaleX(-1);
+        transform: scaleX(-1);
       }
-
-
     }
-
-
-
-
-
-
   }
 }
 

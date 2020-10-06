@@ -46,7 +46,9 @@ task('styles', () => {
         }))
         // Плагин группировки медиазопросов не сочетается с плагином для sourcemaps
         .pipe(gcmq())
-        .pipe(cleanCSS())
+        .pipe(cleanCSS({
+            semicolonAfterLastProperty: false
+        }))
         // .pipe(sourcemaps.write())
         .pipe(dest(`${DIST_PATH}/assets/css`))
         .pipe(reload({stream: true}));

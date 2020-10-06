@@ -1,3 +1,29 @@
 .fonts-test  {
+  padding-top: 60px;
+
+
+  &__item {
+    margin-bottom: 40px;
+    font-size: 32px;
+
+  }
+  &__regular {
+
+  }
+  &__medium {
+    font-weight: 500;
+
+  }
+  &__bold {
+    font-weight: 700;
+
+  }
+  &__extra-bold {
+    font-weight: 800;
+  }
+  &__black {
+    font-weight: 900;
+
+  }
 
 }

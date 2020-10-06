@@ -8,17 +8,30 @@ mixin history-live(data)
 			.history-live__wrap
 				.history-live__column.history-live__column_pos_1
 					.history-live__content
-						.history-live__icon
-							+decor-live({"title": "live"})
-						.history-live__title
+						//.history-live__icon
+						//
+						.history-live__title.history-live__title_show_desc
 							| Прямой эфир
 							br
-							| / 11:00
+							span.history-live__time
+								| / 11:00
+							span.history-live__icon
+								+decor-live({"title": "live"})
 						.history-live__subtitle
 						.history-live__name
 							| Дом для банка: тайны
 							br
 							| банковских зданий
+						.history-live__person
+							.history-live__person-img-box
+								img(src="assets/img/main/live_1.png", alt='').history-live__person-img
+							.history-live__person-desc
+								| Прямой эфир с историком
+								br
+								| Банка России
+								br
+								b Ириной Левичевой
+
 
 
 				.history-live__column.history-live__column_pos_2

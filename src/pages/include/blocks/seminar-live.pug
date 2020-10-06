@@ -10,14 +10,26 @@ mixin seminar-live(data)
 						//.seminar-live__icon
 							+decor-live({"title": "live"})
 						.seminar-live__title
-							| Прямой эфир
+							| Прямой эфир /  &#32; &#32;
 							br
-							| / 13:00
+							span.seminar-live__time
+								| &#32; 13:00
+							span.seminar-live__icon
+								+decor-live({"title": "live"})
 						.seminar-live__subtitle
 						.seminar-live__name
-							| Инвестиции vs Риски. Что нужно
+							| Инвестиции vs Риски. Что нужно &#32;
 							br
 							|знать начинающему инвестору
+						.today-live__person
+							.today-live__person-img-box
+								img(src="assets/img/main/live_3.png", alt='').today-live__person-img
+							.today-live__person-desc
+								| Прямой эфир с заместителем
+								br
+								| Председателя Банка России
+								br
+								b Русланом Вестеровским
 
 
 				.seminar-live__column.seminar-live__column_pos_2

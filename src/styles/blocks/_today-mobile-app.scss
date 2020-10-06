@@ -1,16 +1,9 @@
 .today-mobile-app {
   display: flex;
-  align-items: flex-end;
+
   padding: 25px 25px 0 0;
-
-
-
-
   height: 100%;
-
   position: relative;
-
-
 
   &:before {
     content: '';
@@ -21,7 +14,8 @@
     right: 0;
     width: 1000px;
     height: 100%;
-    background: linear-gradient(253.8deg, #DF00AE 11.23%, #FF99E9 97.77%);    transform: rotate(-180deg);
+    background: linear-gradient(253.8deg, #df00ae 11.23%, #ff99e9 97.77%);
+    transform: rotate(-180deg);
     @include phones {
       right: -20px
     }
@@ -33,7 +27,7 @@
     bottom: 0;
     left: 0;
     right: 0;
-    background: #000;
+    background: #000000;
     opacity: 0;
     transition: .2s ease;
     z-index: 2;
@@ -41,162 +35,179 @@
     @include phones {
       display: none;
     }
-    &_pos_left{
+
+    &_pos_left {
       width: 2000px;
       left: auto;
     }
-    &_pos_right{
+
+    &_pos_right {
       width: 2000px;
       right: auto;
     }
   }
+
   &:hover {
     .today-mobile-app__title {
       text-decoration: underline;
     }
 
-
-    .today-mobile-app__shadow {  opacity: 0.2;}
+    .today-mobile-app__shadow {
+      opacity: 0.2;
+    }
   }
-
 
   &__container {
-
     width: 100%;
-
   }
+
   &__wrap {
     display: flex;
-    position: relative;
-    height: 100%;
 
-    @include laptop {
+    height: 100%;
+    @include desktop {
         flex-wrap: wrap;
+    }
+    @include laptop {
+      flex-wrap: wrap;
       height: auto;
       align-items: flex-start;
     }
-
-
-
   }
+
   &__column {
     flex-grow: 1;
 
     &_pos_1 {
       height: 100%;
       display: flex;
-      align-items: flex-end;
+      //align-items: flex-end;
       padding-bottom: 50px;
-      @include laptop {
 
+      @include laptop {
         display: block;
         height: auto;
         padding-bottom: 45px;
-
-      }
-
-
-
-    }
-    &_pos_2 {
-
-
-      display: flex;
-      align-items: flex-end;
-
-      padding-bottom: 40px;
-
-
-       position: absolute;
-      top: 0px;
-      right: -40px;
-
-      display: none;
-
-      @include desktop {
-          position: static;
-      }
-      @include laptop {
-
-        align-items: flex-start;
-        margin: 0 auto;
-        padding-bottom: 0;
-        max-width: 248px;
-
       }
       @include phones {
-          max-width: 220px;
+        height: auto;
+        order: 2;
+      }
+    }
+
+    &_pos_2 {
+      align-items: flex-end;
+      padding-bottom: 40px;
+      position: absolute;
+
+
+      top: 28px;
+      right: -10px;
+      height: 408px;
+
+      overflow: hidden;
+   
+      @include desktop {
+        padding-bottom: 0;
+        top: auto;
+        bottom: 20px;
+        height: 100%;
+        display: flex;
+      }
+      @include laptop {
+        //align-items: flex-start;
+        //margin: 0 auto;
+        //padding-bottom: 0;
+        //max-width: 248px;
+      }
+      @include phones {
+        position: relative;
+        height: auto;
+        top: auto;
+        right: auto;
+        order: 1;
+        padding-bottom: 0;
+        height: 270px;
+        margin-bottom: -25px;
+
 
       }
-
-
-
-
-
-
     }
-
   }
+
   &__content {
-    z-index: 5;
+    z-index: 12;
     position: relative;
-    @include phones {
-        display: flex;
-      flex-direction: column;
-    }
+
   }
+
   &__title {
     font-weight: bold;
     font-size: 40px;
     line-height: 1.3;
-    color: #FFFFFF;
+    color: #ffffff;
     margin-bottom: 20px;
     white-space: nowrap;
     @include laptop {
       font-size: 32px;
+      white-space: normal;
     }
     @include tablets {
       font-size: 25px;
     }
-
+    br {
+      @include phones {
+          display: none;
+      }
+    }
   }
+
   &__icon {
     margin-bottom: 50px;
     @include phones {
       order: 2;
       margin-bottom: 40px;
     }
-
-
   }
+
   &__desc {
     font-weight: 500;
     font-size: 17px;
     color: #ffffff;
     line-height: 1.5;
-    max-width: 324px;
-
+    max-width: 354px;
     @include tablets {
       font-size: 14px;
     }
     @include phones {
-      margin-bottom: 30px;
+      margin-bottom: 0;
     }
-
+    br {
+      @include phones {
+        display: none;
+      }
+    }
   }
-
 
   &__img-box {
     overflow: hidden;
-    max-width: 361px;
+    max-width: 354px;
+    @include desktop {
+      max-width: 264px;
+      margin: 0 auto;
+    }
+    @include laptop {
+      max-width: 222px;
+    }
+    @include phones {
 
-
+      max-width: 210px;
+    }
   }
+
   &__img {
     display: block;
     max-width: 100%;
     height: auto;
-
   }
-
 }

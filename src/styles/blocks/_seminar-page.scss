@@ -2,7 +2,7 @@
   &__row {
     display: flex;
     @include phones {
-        flex-wrap: wrap;
+      flex-wrap: wrap;
     }
   }
 
@@ -10,7 +10,7 @@
     position: relative;
     width: 50%;
     @include phones {
-        width: 100%;
+      width: 100%;
     }
 
     &_pos_1 {
@@ -23,8 +23,6 @@
       display: flex;
       flex-wrap: wrap;
       flex-direction: column;
-
-
 
       &::before {
         content: '';
@@ -47,8 +45,6 @@
       flex-wrap: wrap;
       flex-direction: column;
 
-
-
       &::before {
         content: '';
         display: block;
@@ -63,13 +59,14 @@
     }
 
     &_count_3 {
-      min-height: 550px;
+      height: 550px;
       @include laptop {
-        min-height: 453px;
+        height: 453px;
       }
       @include phones {
-        min-height: 392px;
+        height: 392px;
       }
+
       &::before {
         content: '';
         display: block;
@@ -79,44 +76,31 @@
         right: 100%;
         width: 2000px;
         height: 100%;
-background: #9CEFFF;
+        background: #9cefff;
         background-size: 722px 100%;
       }
-
-
     }
 
     &_count_4 {
-      min-height: 550px;
+      height: 550px;
       @include laptop {
-        min-height: 453px;
+        height: 453px;
       }
       @include phones {
-          min-height: 400px;
+        height: 400px;
       }
-
     }
-
-
-
-
   }
-
-
-
-
-
 
   &__item {
     //flex-grow: 1;
     position: relative;
 
     &_pos_1 {
-      min-height: 453px;
+      height: 453px;
       @include phones {
-          min-height: 375px;
+        height: 457px;
       }
-
 
       &::before {
         content: '';
@@ -127,25 +111,22 @@ background: #9CEFFF;
         right: 100%;
         width: 2000px;
         height: 100%;
-        background: linear-gradient(0deg, #FEBA36 16.64%, #FEDC32 83.56%), #FEDD30;
+        background: linear-gradient(0deg, #feba36 16.64%, #fedc32 83.56%), #fedd30;
         @include phones {
           left: -20px;
         }
       }
-
-
     }
 
     &_pos_2 {
-      min-height: 569px;
+      height: 569px;
       @include laptop {
-        min-height: 453px;
+        height: 453px;
       }
       @include phones {
         height: 445px;
-        min-height:auto ;
+        min-height: auto;
       }
-
 
       &::before {
         content: '';
@@ -156,25 +137,22 @@ background: #9CEFFF;
         right: 100%;
         width: 2000px;
         height: 100%;
-        background: #5C7EFF;
+        background: #5c7eff;
         @include phones {
           left: -20px;
         }
       }
-
-
     }
+
     &_pos_3 {
-      min-height: 630px;
+      height: 630px;
       @include laptop {
-        min-height: 453px;
+        height: 453px;
       }
       @include phones {
         height: 399px;
-        min-height:auto ;
-
+        min-height: auto;
       }
-
 
       &::before {
         content: '';
@@ -185,37 +163,23 @@ background: #9CEFFF;
         left: 100%;
         width: 2000px;
         height: 100%;
-        background: #8C25EE;
+        background: #8c25ee;
         @include phones {
           left: -20px;
         }
-
       }
-
-
-
-
     }
+
     &_pos_4 {
-      min-height: 392px;
+      height: 392px;
       @include laptop {
-        min-height: 453px;
+        height: 453px;
       }
       @include phones {
         height: 392px;
         min-height: auto;
       }
-
-
-
-
     }
-
-
-
-
-
-
   }
 }
 

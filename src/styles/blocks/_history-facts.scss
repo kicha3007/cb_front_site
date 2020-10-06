@@ -63,33 +63,65 @@
 
 
 
-  &::before {
+  //&::before {
+  //  content: '';
+  //  display: block;
+  //  position: absolute;
+  //  top: 0;
+  //  bottom: 0;
+  //  right: 0;
+  //  width: 1026px;
+  //  height: 100%;
+  //  background: url("../img/main/facts.jpg") no-repeat top right;
+  //
+  //  background-size: cover;
+  //  @include laptop {
+  //    background-size: 88%;
+  //  }
+  //  @include phones {
+  //      left: -20px;
+  //
+  //
+  //    width: calc(100% + 40px);
+  //    background-size: 326%;
+  //    background-position: -695px 0px;
+  //  }
+  //}
+
+
+  &:before {
     content: '';
     display: block;
     position: absolute;
     top: 0;
     bottom: 0;
     right: 0;
-    width: 1026px;
+    width: 1456px;
     height: 100%;
-    background: url("../img/main/facts.png") no-repeat top right;
 
-    background-size: 81%;
-    @include laptop {
-      background-size: 88%;
-    }
+    background: url("../img/main/facts.jpg") no-repeat top right;
+    background-size: cover;
     @include phones {
-        left: -20px;
+      left: -20px;
 
 
+
+
+      background-size: 593%;
+      z-index: 1;
       width: calc(100% + 40px);
-      background-size: 326%;
-      background-position: -695px 0px;
+      background-position: calc(100% + 160px) -10px;
     }
   }
+
+
+
+
+
+
   &__content {
     position: relative;
-    z-index: 5;
+    z-index: 12;
   }
 
   &__container {

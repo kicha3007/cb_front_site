@@ -95,30 +95,7 @@
 
 
 
-      &::before {
-        content: '';
-        display: block;
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 100%;
-        width: 2000px;
-        height: 100%;
-        background: #77BDFF;
 
-        @include phones {
-          background: #77BDFF url("../img/main/virtual-tour.png")  center bottom  no-repeat;
-
-          z-index: 5;
-          background-size: 173%;
-          width: calc(100% + 40px);
-          left: -20px;
-          right: -20px;
-        }
-
-
-
-      }
 
     }
     &_count_3 {

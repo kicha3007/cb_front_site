@@ -61,6 +61,8 @@
 
   }
   &__content {
+    position: relative;
+    z-index: 12;
     @include phones {
       max-width: 305px;
     }

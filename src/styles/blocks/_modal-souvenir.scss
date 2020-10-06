@@ -1,10 +1,13 @@
 .modal-souvenir {
   background: transparent;
-  padding: 80px 25px 70px 60px;
+  padding: 40px 25px 70px 40px;
   z-index: 200;
   max-width: 1070px;
 
   margin: 0 auto;
+  &_mod_1 {
+    padding-bottom: 50px;
+  }
 
 
   /* Скрываем окна  */
@@ -48,21 +51,38 @@
     font-weight: bold;
     font-size: 28px;
     color: #fff50a;
-    margin-bottom: 20px;
+    margin-bottom: 18px;
     @include tablets {
       font-size: 15px;
     }
     &_size_min {
       font-size: 24px;
     }
+    br {
+      display: none ;
+    }
+    &_mod_1 {
+      br {
+        display: inline-block ;
+      }
+
+
+    }
+
   }
+
 
   &__desc {
     font-size: 16px;
     color: #ffffff;
+    margin-bottom: -20px;
     @include tablets {
       font-size: 12px;
       margin-bottom: -10px;
+    }
+    &_mod_1 {
+      //margin-bottom: 45px;
+      margin-bottom: 5px;
     }
   }
 
@@ -119,9 +139,16 @@
       max-height: none;
       max-width: 270px;
       margin: 0 auto;
+
     }
     &_mod_2 {
+      max-height: 270px ;
+      max-width: 380px;
 
+
+    }
+    &_mod_1 {
+      max-height: 269px;
     }
   }
 
@@ -139,11 +166,13 @@
       position: static;
     }
     &_mod_2 {
-      top: -81px;
+      top: -30px;
       right: 0px;
 
     }
   }
+
+
 
   .fancybox-close-small {
     position: absolute;
@@ -159,15 +188,17 @@
 
   &__close {
     position: absolute;
-    right: 15px;
-    top: 15px;
+    right: -5px;
+    top: -20px;
     width: 15px;
     height: 15px;
     cursor: pointer;
     @include tablets {
       top: 17px;
       right: 18px;
+
     }
+
   }
 
   &__close-img {
@@ -176,16 +207,21 @@
     height: auto;
   }
   .modal-form__btn-wrap{
+    margin-top: 10px;
     @include tablets {
         max-width: 312px;
       margin-right: auto;
       margin-left: auto;
     }
+    @include phones {
+      margin-top: 30px;
+    }
   }
   .modal-form__input {
-    @include tablets {
-        height: 44px;
-    }
+    height: 44px;
+  }
+  .modal-form__content {
+    margin-bottom: 0;
   }
   &__note {
     font-size: 16px;
@@ -193,11 +229,17 @@
 
     color: #FFFFFF;
     margin-bottom: -30px;
+
     @include tablets {
-      padding-top: 8px;
+      font-size: 12px;
+      padding-top: 10px;
       margin-bottom: 0;
     }
   }
+  &_mod_1 {
+    .main-checkbox {
+      margin-top: 20px;
+    }
+  }
 }
-
 

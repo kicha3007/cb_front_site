@@ -105,7 +105,7 @@
   &__content {
 
     position: relative;
-    z-index: 5;
+    z-index: 12;
     @include tablets {
       max-width: 240px;
     }

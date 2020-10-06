@@ -3,6 +3,10 @@
   height: 100%;
   display: block;
   position: relative;
+  padding-top: 55px;
+
+
+
   @include phones {
     padding-top: 40px;
   }
@@ -65,7 +69,7 @@
 
 
       display: flex;
-      align-items: flex-end;
+      //align-items: flex-end;
       padding-bottom: 35px;
       @include phones {
         margin-bottom: 50px;
@@ -103,9 +107,9 @@
 
   }
   &__content {
-    z-index: 5;
+    z-index: 12;
     position: relative;
-    max-width: 350px;
+    max-width: 397px;
     @include phones {
         display: flex;
       flex-direction: column;
@@ -122,18 +126,22 @@
       font-size: 25px;
     }
     @include phones {
-        order: 1;
-      margin-bottom: 155px;
+        //order: 1;
+      margin-bottom: 20px;
     }
+
+
+    
 
 
   }
-  &__icon {
-    margin-bottom: 50px;
+  .decor-live {
     @include phones {
-      order: 2;
-      margin-bottom: 40px;
+      margin-left: 5px;
     }
+  }
+  &__icon {
+  display: none;
 
 
   }
@@ -146,24 +154,32 @@
       font-size: 17px;
     }
     @include phones {
-      order: 3;
+      //order: 3;
     }
 
 
   }
   &__name {
     font-weight: 500;
-    font-size: 17px;
+    font-size: 27px;
     color: #FFFFFF;
-    @include tablets {
-      font-size: 14px;
-    }
+    margin-bottom: 60px;
+
     @include phones {
-      order: 4;
+      font-weight: bold;
+      font-size: 17px;
+      margin-bottom: 90px;
+
+    }
+    br {
+      @include phones {
+          display: none;
+      }
     }
 
   }
   &__img-box {
+
 
 
   }
@@ -173,5 +189,37 @@
     height: auto;
 
   }
+
+  &__person {
+    display: flex;
+    align-items: center;
+    @include phones {
+        flex-wrap: wrap;
+    }
+  }
+  &__person-img-box {
+    width: 106px;
+    height: 106px;
+    margin-right: 24px;
+    overflow: hidden;
+    @include phones {
+      margin-bottom: 20px;
+    }
+
+  }
+  &__person-img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+  &__person-desc {
+    font-weight: normal;
+    font-size: 14px;
+    color: #FFFFFF;
+    @include phones {
+      width: 100%;
+    }
+  }
+
 
 }

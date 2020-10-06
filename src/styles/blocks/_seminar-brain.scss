@@ -73,6 +73,7 @@
 
 
   &__wrap {
+
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -87,6 +88,8 @@
 
   }
   &__content {
+    position: relative;
+    z-index: 12;
     @include phones {
       max-width: 305px;
     }
@@ -95,6 +98,7 @@
   &__container {
     position: relative;
     z-index: 6;
+    height: 100%;
   }
   &__column {
     &_pos_1 {
@@ -110,6 +114,9 @@
     &_pos_2 {
 
       @include phones {
+        display: flex;
+        align-items: flex-end;
+        height: 100%;
   
 
       }
@@ -144,20 +151,29 @@
 
   }
   &__img-box {
-    position: relative;
-    max-width: 420px;
-    max-height: 360px;
-    overflow: hidden;
+
+
+
+
+    position: absolute;
     z-index: 5;
-    right: -90px;
+    right: -220px;
+    bottom: 10px;
+    @include desktop {
+        bottom: 60px;
+    }
     @include laptop {
-      right: -40px;
+     
     }
     @include phones {
-        max-width: 310px;
+
       display: flex;
       align-items: center;
-      max-height: 260px;
+
+
+      bottom: auto;
+      right: -80px;
+      top: 0;
     }
 
 
@@ -165,8 +181,18 @@
   }
   &__img {
     display: block;
-    max-width:100%;
+
     height: auto;
+    width: 590px;
+    @include laptop {
+      width: 450px;
+
+    }
+    @include phones {
+        width: 350px;
+
+
+    }
 
   }
 }

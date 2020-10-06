@@ -18,3 +18,12 @@
 //@include font-face("CoHeadlineCorp-Regular", "../fonts/CoHeadlineCorp-Regular");
 //
 //@include font-face("ProximaNoba-Regular", "../fonts/proxima_nova_regular-webfont");
+
+@include font-face("Montserrat", "../fonts/Montserrat-Regular", 400, null, 'ttf')
+@include font-face("Montserrat", "../fonts/Montserrat-Medium" , 500, null, 'ttf')
+@include font-face("Montserrat", "../fonts/Montserrat-Bold" , 700, null, 'ttf')
+@include font-face("Montserrat", "../fonts/Montserrat-ExtraBold", 800, null, 'ttf')
+
+@include font-face("Montserrat", "../fonts/Montserrat-Black" , 900, null, 'ttf')
+
+

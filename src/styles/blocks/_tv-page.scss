@@ -23,6 +23,7 @@
 
     display: flex;
     align-items: center;
+    outline: none;
     @include laptop {
       margin-bottom: 30px;
     }
@@ -98,6 +99,7 @@
 
 
   &__img-outer {
+    outline: none;
     display: block;
     max-width: 100%;
     height: auto;

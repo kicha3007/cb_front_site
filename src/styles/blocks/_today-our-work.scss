@@ -32,14 +32,15 @@
     top: 0;
     bottom: 0;
     left: 0;
-    width: 725px;
+    width: 1160px;
     height: 100%;
     background: url("../img/main/our-work.png") no-repeat top left;
     background-size:  cover;
     z-index: 1;
    @include phones {
        left: -20px;
-     width: calc(100% + 40px)
+     width: calc(100% + 40px);
+     background-position: center top;
    }
   }
   &::after {
@@ -107,7 +108,7 @@
 
   &__content {
     position: relative;
-    z-index: 5;
+    z-index: 12;
     display: flex;
     align-items: center;
     justify-content: space-between;
